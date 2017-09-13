@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>数据列表</title>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/list.css" />     
+</head>
+<body>
+<div class="list" id="datalist">
+	<table width="100%" class="table table-hover table-bordered">
+		<thead>
+			<tr>
+				<th>调研记录</th><th>科室调研</th><th>方案结果</th><th>操作</th>
+			</tr>
+		</thead>
+		<tbody class="content">
+			
+		</tbody>
+	</table>
+</div>
+</body>
+<script type="text/javascript"  src="js/grdsIndexList.js"></script> 
+<script>
+	window.onload=function(){
+		fetchAllList();
+	}
+</script>
+</html>

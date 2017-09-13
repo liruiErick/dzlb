@@ -1,0 +1,1509 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+   <!--
+   	作者：knewspring@163.com
+   	时间：2016-05-10
+   	描述：
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+   -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <title>首页</title>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="js/grdsIndexedDb.js"></script>
+	<script type="text/javascript" src="js/pdfobject.js"></script>
+	<script src="js/jBox.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>   
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />     
+	<!--必要样式-->
+	<link rel="stylesheet" href="css/default_skin.css" />
+	<link href="css/jBox.css" rel="stylesheet">
+	<!--
+    	作者：knewspring@163.com
+    	时间：2016-05-06
+    	描述：pdfviewer
+    -->
+    <style type="text/css">
+    	@font-face{ 
+    		font-family: "方正兰亭中黑";
+    	    src: url('font/FZLTZHK.TTF');
+    	}		
+    </style>
+	<script type="text/javascript" src="js/jquery.sky.carousel-1.0.2.min.js"></script>	
+	<script type="text/javascript" src="js/print-html-element.min.js"></script>	
+	<script src="js/base.js"></script>
+	<script type="text/javascript">	        
+        $(function () {	
+		skyCarousel = $('#character-slider1').carousel({
+			itemWidth: 528,
+			itemHeight: 512,
+			enableMouseWheel: false,
+			gradientOverlayVisible: true,
+			gradientOverlayColor: '#F0F3EE',
+			gradientOverlaySize: 300,
+			distance: 450,
+			selectedItemDistance: 60,
+			selectByClick: true,
+			selectedItemZoomFactor: 1,  
+			unselectedItemZoomFactor: 0.5,
+			navigationButtonsVisible: false,
+			showPreloader: false,
+			autoSlideshow: false
+		})
+	
+	});
+	$(function () {	
+		skyCarousel = $('#character-slider2').carousel({
+			itemWidth: 528,
+			itemHeight: 512,
+			enableMouseWheel: false,
+			gradientOverlayVisible: true,
+			gradientOverlayColor: '#F0F3EE',
+			gradientOverlaySize: 300,
+			distance: 450,
+			selectedItemDistance: 60,
+			selectByClick: true,
+			selectedItemZoomFactor: 1,  
+			unselectedItemZoomFactor: 0.5,
+			navigationButtonsVisible: false,
+			showPreloader: false,
+			autoSlideshow: false
+		})
+	
+	});
+	$(function () {	
+		skyCarousel = $('#character-slider3').carousel({
+			itemWidth: 528,
+			itemHeight: 512,
+			enableMouseWheel: false,
+			gradientOverlayVisible: true,
+			gradientOverlayColor: '#F0F3EE',
+			gradientOverlaySize: 300,
+			distance: 450,
+			selectedItemDistance: 60,
+			selectByClick: true,
+			selectedItemZoomFactor: 1,  
+			unselectedItemZoomFactor: 0.5,
+			navigationButtonsVisible: false,
+			showPreloader: false,
+			autoSlideshow: false
+		})
+	
+	});
+	$(function () {	
+		skyCarousel = $('#character-slider4').carousel({
+			itemWidth: 528,
+			itemHeight: 512,
+			enableMouseWheel: false,
+			gradientOverlayVisible: true,
+			gradientOverlayColor: '#F0F3EE',
+			gradientOverlaySize: 300,
+			distance: 450,
+			selectedItemDistance: 60,
+			selectByClick: true,
+			selectedItemZoomFactor: 1,  
+			unselectedItemZoomFactor: 0.5,
+			navigationButtonsVisible: false,
+			showPreloader: false,
+			autoSlideshow: false
+		})
+	});
+	</script>
+</head>
+<body>
+	<input type="hidden" id="resultid" />
+	<div class="add ">
+		<div class="visit-hospital" id="visitHospital">
+			<img src="img/p1-title.png" class="p1-title" />
+			<input type="text" id="hospital" name="hospital" placeholder="" /><br />
+			<button id="addhospital"><img src="img/p1-queren.png" /></button>
+		</div>
+	</div>
+	<div class="containers hide">
+		<div class="page page0 cur">
+			<div class="p1-content">
+				<img src="img/P2-1.jpg" class="P2-1" />
+				<img src="img/P2-2.jpg" class="P2-2 hide" />
+				<img src="img/P2-3.jpg" class="P2-3 hide" />
+			</div>
+		</div>
+		<div class="page page1">
+			<div class="p2-content">
+				<div class="P3-1" style="background: url(img/P3-1.jpg) no-repeat;">
+					<a href="javascript:showpdf();"><span id="pdfsrc">文献原文</span></a>
+				</div>
+				<div class="P3-2 hide" style="background: url(img/P3-2.jpg) no-repeat;">
+					<a href="javascript:showpdf();"><span id="pdfsrc">文献原文</span></a>
+				</div>
+				<div class="P3-3 hide" style="background: url(img/P3-3.jpg) no-repeat;">
+					<a href="javascript:showpdf();"><span id="pdfsrc">文献原文</span></a>
+				</div>
+				<div class="P3-4 hide" style="background: url(img/P3-4.jpg) no-repeat;">
+					<a href="javascript:showpdf();"><span id="pdfsrc">文献原文</span></a>
+				</div>
+				<div class="P3-5 hide" style="background: url(img/P3-5.jpg) no-repeat;">
+					<a href="javascript:showpdf();"><span id="pdfsrc">文献原文</span></a>
+				</div>
+				<div class="P3-6 hide" style="background: url(img/P3-6.jpg) no-repeat;">
+					<a href="javascript:showpdf();"><span id="pdfsrc">文献原文</span></a>
+				</div>
+			</div>
+			<div id="pdfview"></div>
+		</div>
+		<div class="page page2">
+			<div class="p3-content">
+				<img src="img/P4.jpg" class="P4-1" />
+			</div>
+		</div>
+	</div>
+	
+	<div class="investigation hide">
+		<!--第一题-->
+		<div class="title first hide" id="1">
+			<h2 class="choice-title">腹透中心调研</h2>
+			<h3>医院服务人口数量：</h3>
+			<div class="content" id="questions1">
+				<a href="javascript:void(0);" value="A"><span class="selection-box"></span>100万以下</a>
+				<a href="javascript:void(0);" value="B"><span class="selection-box"></span>100-300万</a>
+				<a href="javascript:void(0);" value="C"><span class="selection-box"></span>300-500万以上</a>
+				<a href="javascript:void(0);" value="D"><span class="selection-box"></span>500万以上 </a>
+				<input type="hidden" value="" id="checked1" />
+				<div class="clear"></div>
+			</div>
+			<div class="answer-page">
+				<button class="next">下一题</button>
+			</div>
+		</div>
+		<!--第二题-->
+		<div class="title second hide" id="2">
+			<h2 class="choice-title">腹透中心调研</h2>
+			<h3>大部分终末期肾病患者医保报销比例：</h3>
+			<div class="content" id="questions2">
+				<a href="javascript:void(0);" value="A"><span class="selection-box"></span>50%以下 </a>
+				<a href="javascript:void(0);" value="B"><span class="selection-box"></span>50%-75%</a>
+				<a href="javascript:void(0);" value="C"><span class="selection-box"></span>75%-90%</a>
+				<a href="javascript:void(0);" value="D"><span class="selection-box"></span>90%-100%</a>
+				<input type="hidden" value="" id="checked2" />
+				<div class="clear"></div>
+			</div>
+			<div class="answer-page">
+				<button class="prev">上一题</button>
+				<button class="next">下一题</button>
+			</div>
+		</div>
+		<!--第三题-->
+		<div class="title third hide" id="3">
+			<h2 class="choice-title">腹透中心调研</h2>
+			<h3>血透开展情况：</h3>
+			<div class="content" id="questions3">
+				<a href="javascript:void(0);" value="A"><span class="selection-box"></span>超过50台机器</a>
+				<a href="javascript:void(0);" value="B"><span class="selection-box"></span>50-10台</a>
+				<a href="javascript:void(0);" value="C"><span class="selection-box"></span>10台以下</a>
+				<a href="javascript:void(0);" value="D"><span class="selection-box"></span>尚未开展或有不同科室负责 </a>
+				<input type="hidden" value="" id="checked3" />
+				<div class="clear"></div>
+			</div>
+			<div class="answer-page">
+				<button class="prev">上一题</button>
+				<button class="next">下一题</button>
+			</div>
+		</div>
+		<!--第四题-->
+		<div class="title four hide" id="4">
+			<h2 class="choice-title">腹透中心调研</h2>
+			<h3>腹透开展情况：</h3>
+			<div class="content" id="questions4">
+				<a href="javascript:void(0);" value="A"><span class="selection-box"></span>尚未开展</a>
+				<a href="javascript:void(0);" value="B"><span class="selection-box"></span>10名以下患者</a>
+				<a href="javascript:void(0);" value="C"><span class="selection-box"></span>10-30名患者</a>
+				<a href="javascript:void(0);" value="D"><span class="selection-box"></span>30-60名患者</a>
+				<a href="javascript:void(0);" value="E"><span class="selection-box"></span>60-100名患者</a>
+				<a href="javascript:void(0);" value="F"><span class="selection-box"></span>100名以上患者</a>
+				<input type="hidden" value="" id="checked4" />
+				<div class="clear"></div>
+			</div>
+			<div class="answer-page" id="answer4">
+				<button class="prev">上一题</button>
+				<button class="next">下一题</button>
+			</div>
+		</div>
+		<!--第五题-->
+		<div class="title five hide" id="5">
+			<h2 class="choice-title">腹透中心调研</h2>
+			<h3>每年置管数量：</h3>
+			<div class="content" id="questions5">
+				<a href="javascript:void(0);" value="A"><span class="selection-box"></span>尚未开展置管技术</a>
+				<a href="javascript:void(0);" value="B"><span class="selection-box"></span>10根以下</a>
+				<a href="javascript:void(0);" value="C"><span class="selection-box"></span>20-50根</a>
+				<a href="javascript:void(0);" value="D"><span class="selection-box"></span>50根以上</a>
+				<input type="hidden" value="" id="checked5" />
+				<div class="clear"></div>
+			</div>
+			<div class="answer-page">
+				<button class="prev">上一题</button>
+				<button class="next">下一题</button>
+			</div>
+		</div>
+		<!--第六题-->
+		<div class="title six hide" id="6">
+			<h2 class="choice-title">腹透中心调研</h2>
+			<h3>腹透中心规模：</h3>
+			<div class="content" id="questions6">
+				<a href="javascript:void(0);" value="A"><span class="selection-box"></span>无独立的腹透区域</a>
+				<a href="javascript:void(0);" value="B"><span class="selection-box"></span>有单独一间腹透操作室</a>
+				<a href="javascript:void(0);" value="C"><span class="selection-box"></span>有多间房屋做腹透功能区域 </a>
+				<input type="hidden" value="" id="checked6" />
+				<div class="clear"></div>
+			</div>
+			<div class="answer-page" id="answer6">
+				<button class="prev">上一题</button>
+				<button class="next">下一题</button>
+			</div>
+		</div>
+		<!--第七题-->
+		<div class="title seven hide" id="7">
+			<h2 class="choice-title">腹透中心调研</h2>
+			<h3>腹透管理水平：（多选）</h3>
+			<div class="content" id="questions7">
+				<a href="javascript:void(0);" id="A" value="A"><span class="selection-box"></span>有完善的患者管理体系</a>
+				<a href="javascript:void(0);" id="B" value="B"><span class="selection-box"></span>有专职腹透医生</a>
+				<a href="javascript:void(0);" id="C" value="C"><span class="selection-box"></span>有专职腹透护士</a>
+				<a href="javascript:void(0);" id="D" value="D"><span class="selection-box"></span>有定期腹透门诊 </a>
+				<a href="javascript:void(0);" id="E" value="E"><span class="selection-box"></span>无 </a>
+				<input type="hidden" value="" id="checked7A" />
+				<input type="hidden" value="" id="checked7B" />
+				<input type="hidden" value="" id="checked7C" />
+				<input type="hidden" value="" id="checked7D" />
+				<input type="hidden" value="" id="checked7E" />
+				<div class="clear"></div>
+			</div>
+			<div class="answer-page" id="answer7">
+				<button class="prev">上一题</button>
+				<button class="next7">下一题</button>
+			</div>
+		</div>
+		<!--第八题-->
+		<div class="title eighth hide" id="8">
+			<h2 class="choice-title">腹透中心调研</h2>
+			<h3>腹透发展期望：</h3>
+			<div class="content" id="questions8">
+				<a href="javascript:void(0);" value="A"><span class="selection-box"></span>作为血液透析的补充</a>
+				<a href="javascript:void(0);" value="B"><span class="selection-box"></span>成为本区域标志性腹透中心</a>
+				<a href="javascript:void(0);" value="C"><span class="selection-box"></span>成为全国具有一定知名度的腹透中心</a>
+				<input type="hidden" value="" id="checked8" />
+			</div>
+			<div class="answer-page" id="ans8">
+				<button class="prev">上一题</button>
+				<button class="submit" id="btnsubmit">提交</button>
+			</div>
+		</div>
+		<!--等待-->
+		<div class="loading-div hide">
+			<img src="img/load.jpg" class="loading" />
+		</div>
+		<!--图片展示-->
+		<div class="picture hide">
+			<section id="second-phase" class="phase-row" data-title="Illustrations" data-coloroverlap="light">
+				<div id="character-slider1" class="sky-carousel sc-no-select hide">
+					<div class="sky-carousel-wrapper">
+						<ul class="sky-carousel-container result-AB">
+                            <li><img src="images/xueshuhuiyi1.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyia2.jpg" names="huiyi" class="sc-image" /></li>									
+						    <li><img src="images/huanzhejiaoyu1.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu2.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu3.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu4.jpg" names="huanjiao" class="sc-image" /></li>	                            							
+							<li><img src="images/huanzhejiaoyu5.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu6.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu7.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu8.jpg" names="huanjiao" class="sc-image" /></li>
+						    <li><img src="images/keshijianshe1.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe2.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe3.jpg" names="keshi" class="sc-image" /></li>								
+							<li><img src="images/yingjianjianshe1.jpg" names="yingjian" class="sc-image" /></li>							
+							<li><img src="images/yingjianjianshe2.jpg" names="yingjian" class="sc-image" /></li>
+							<li><img src="images/yingjianjianshe3.jpg" names="yingjian" class="sc-image" /></li>								
+							<li><img src="images/xueshuhuiyi1.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyia2.jpg" names="huiyi" class="sc-image" /></li>							
+							<li><img src="images/huanzhejiaoyu1.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu2.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu3.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu4.jpg" names="huanjiao" class="sc-image" /></li>	                            							
+							<li><img src="images/huanzhejiaoyu5.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu6.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu7.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu8.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/keshijianshe1.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe2.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe3.jpg" names="keshi" class="sc-image" /></li>
+						</ul>
+					</div>
+				</div>
+				<div id="character-slider2" class="sky-carousel sc-no-select hide">
+					<div class="sky-carousel-wrapper">
+						<ul class="sky-carousel-container result-CD">						    
+							<li><img src="images/xueshuhuiyi1.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyia2.jpg" names="huiyi" class="sc-image" /></li>									
+						    <li><img src="images/huanzhejiaoyu1.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu2.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu3.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu4.jpg" names="huanjiao" class="sc-image" /></li>	                            							
+							<li><img src="images/huanzhejiaoyu5.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu6.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu7.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu8.jpg" names="huanjiao" class="sc-image" /></li>
+						    <li><img src="images/keshijianshe1.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe2.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe3.jpg" names="keshi" class="sc-image" /></li>							
+							<li><img src="images/yingjianjianshe1.jpg" names="yingjian" class="sc-image" /></li>							
+							<li><img src="images/yingjianjianshe2.jpg" names="yingjian" class="sc-image" /></li>
+							<li><img src="images/yingjianjianshe3.jpg" names="yingjian" class="sc-image" /></li>							
+							<li><img src="images/xueshuhuiyi1.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyia2.jpg" names="huiyi" class="sc-image" /></li>							
+							<li><img src="images/huanzhejiaoyu1.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu2.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu3.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu4.jpg" names="huanjiao" class="sc-image" /></li>	                            							
+							<li><img src="images/huanzhejiaoyu5.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu6.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu7.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu8.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/keshijianshe1.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe2.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe3.jpg" names="keshi" class="sc-image" /></li>
+						</ul>
+					</div>
+				</div>
+				<div id="character-slider3" class="sky-carousel sc-no-select hide">
+					<div class="sky-carousel-wrapper">
+						<ul class="sky-carousel-container result-E">
+						    <li><img src="images/xueshuhuiyi1.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyi2.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyi3.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyi4.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu1.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu2.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu3.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu4.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu5.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu6.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu7.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu8.jpg" names="huanjiao" class="sc-image" /></li>
+                            <li><img src="images/keshijianshe1.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe2.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe3.jpg" names="keshi" class="sc-image" /></li>						
+							<li><img src="images/yingjianjianshe4.jpg" names="yingjian" class="sc-image" /></li>
+							<li><img src="images/yingjianjianshe5.jpg" names="yingjian" class="sc-image" /></li>
+							<li><img src="images/yingjianjianshe6.jpg" names="yingjian" class="sc-image" /></li>
+							<li><img src="images/yingjianjianshe7.jpg" names="yingjian" class="sc-image" /></li>
+							<li><img src="images/yingjianjianshe8.jpg" names="yingjian" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyi1.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyi2.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyi3.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyi4.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu1.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu2.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu3.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu4.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu5.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu6.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu7.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu8.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/keshijianshe1.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe2.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe3.jpg" names="keshi" class="sc-image" /></li>
+						</ul>
+					</div>
+				</div>
+				<div id="character-slider4" class="sky-carousel sc-no-select hide">
+					<div class="sky-carousel-wrapper">
+						<ul class="sky-carousel-container result-F">
+							<li><img src="images/xueshuhuiyi1.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyi2.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyi3.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyi4.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu1.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu2.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu3.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu4.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu5.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu6.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu7.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu8.jpg" names="huanjiao" class="sc-image" /></li>
+                            <li><img src="images/keshijianshe1.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe2.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe3.jpg" names="keshi" class="sc-image" /></li>						
+							<li><img src="images/yingjianjianshe4.jpg" names="yingjian" class="sc-image" /></li>
+							<li><img src="images/yingjianjianshe5.jpg" names="yingjian" class="sc-image" /></li>
+							<li><img src="images/yingjianjianshe6.jpg" names="yingjian" class="sc-image" /></li>
+							<li><img src="images/yingjianjianshe7.jpg" names="yingjian" class="sc-image" /></li>
+							<li><img src="images/yingjianjianshe8.jpg" names="yingjian" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyi1.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyi2.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyi3.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/xueshuhuiyi4.jpg" names="huiyi" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu1.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu2.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu3.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu4.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu5.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu6.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu7.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/huanzhejiaoyu8.jpg" names="huanjiao" class="sc-image" /></li>
+							<li><img src="images/keshijianshe1.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe2.jpg" names="keshi" class="sc-image" /></li>
+							<li><img src="images/keshijianshe3.jpg" names="keshi" class="sc-image" /></li>
+						</ul>
+					</div>
+					        <canvas class="sc-overlay sc-overlay-left hide" width="150" height="1"></canvas>
+							<canvas class="sc-overlay sc-overlay-right" width="100" height="1"></canvas>
+						</div>
+						<div class="picture-page">
+							<div class="exhibition">
+								<div class="triangle-left"></div>
+								<button id="hardwareBuilding" class="yingjian-button">硬件建设</button>
+							</div>
+							<div class="exhibition">
+								<div class="triangle-left"></div>
+								<button id="conferenceExibition" class="huiyi-button">学术会议</button>
+							</div>
+							<div class="exhibition">
+								<div class="triangle-left"></div>
+								<button id="patientEducation" class="huanjiao-button">患者教育</button>
+							</div>
+							<div class="exhibition">
+								<div class="triangle-left"></div>
+								<button id="subdivisionBuilding" class="keshi-button">科室建设</button>
+							</div>
+						</div>
+					</section>
+					<button id="nextpage">下一页</button>
+				</div>
+			</div>
+	
+        <!--答题生成 结果确认-->
+		<div class="scheme hide">
+			<!--<h3>生成方案结果</h3>-->
+			<table cellpadding="0" cellspacing="0" class="one-situation changshang hide" id="answer-result">
+				<caption class="br-caption"></caption>
+				<thead>
+					<tr>
+						<th class="br-first br-first-program">投入方案</th>
+						<th class="br-second first-add"></th>
+					</tr>
+					<tr>
+						<th class="br-first">投入项目</th>
+						<th class="br-second">内&nbsp;&nbsp;&nbsp;容</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="br-first">硬件投入</td>
+						<td class="br-second">腹透中心配套硬件、腹透中心宣传硬件、腹透中心患教硬件</td>
+					</tr>
+					<tr>
+						<td class="br-first">学术会议</td>
+						<td class="br-second">2016年第53届欧洲肾脏协会-欧洲透析和移植协会大会、中华护理学会2016年腹膜透析临床护理培训班、中华医学会肾脏病学2016年学术年会</td>
+					</tr>
+					<tr>
+						<td class="br-first">患者教育</td>
+						<td class="br-second">患教资料、患者礼包、肾友会支持、腹透患者微信服务平台</td>
+					</tr>
+					<tr>
+						<td class="br-first">科室建设</td>
+						<td class="br-second">科室会议、科室拓展</td>
+					</tr>
+					<tr class="last">
+						<td class="br-first">达标内容</td>
+						<td class="br-second" style="border-bottom-left-radius:12px;">与华润双鹤共同管理腹透患者120人</td>
+					</tr>
+					<tr class="last">
+						<td class="br-first-last" colspan="2"></td>
+					</tr>
+				</tbody>
+			</table>
+			<table cellpadding="0" cellspacing="0" class="two-situation changshang hide" id="answer-result">
+				<caption class="br-caption"></caption>
+				<thead>
+					<tr>
+						<th class="br-first br-first-program">投入方案</th>
+						<th class="br-second first-add"></th>
+					</tr>
+					<tr>
+						<th class="br-first">投入项目</th>
+						<th class="br-second">内&nbsp;&nbsp;&nbsp;容</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="br-first">硬件投入</td>
+						<td class="br-second">腹透中心配套硬件、腹透中心宣传硬件、腹透中心患教硬件</td>
+					</tr>
+					<tr>
+						<td class="br-first">学术会议</td>
+						<td class="br-second">2016年第53届欧洲肾脏协会-欧洲透析和移植协会大会、中华护理学会2016年腹膜透析临床护理培训班、中华医学会肾脏病学2016年学术年会</td>
+					</tr>
+					<tr>
+						<td class="br-first">患者教育</td>
+						<td class="br-second">患教资料、患者礼包、肾友会支持、腹透患者微信服务平台</td>
+					</tr>
+					<tr>
+						<td class="br-first">科室建设</td>
+						<td class="br-second">科室会议、科室拓展</td>
+					</tr>
+					<tr class="last">
+						<td class="br-first">达标内容</td>
+						<td class="br-second" style="border-bottom-left-radius:12px;">与华润双鹤共同管理腹透患者100人</td>
+					</tr>
+					<tr class="last">
+						<td class="br-first-last" colspan="2"></td>
+					</tr>
+				</tbody>
+			</table>
+			<table cellpadding="0" cellspacing="0" class="three-situation changshang hide" id="answer-result">
+				<caption class="br-caption"></caption>
+				<thead>
+					<tr>
+						<th class="br-first br-first-program">投入方案</th>
+						<th class="br-second first-add"></th>
+					</tr>
+					<tr>
+						<th class="br-first">投入项目</th>
+						<th class="br-second">内&nbsp;&nbsp;&nbsp;容</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="br-first">硬件投入</td>
+						<td class="br-second">腹透中心配套硬件、腹透中心宣传硬件、腹透中心患教硬件</td>
+					</tr>
+					<tr>
+						<td class="br-first">学术会议</td>
+						<td class="br-second">中华护理学会2016年腹膜透析临床护理培训班、中华医学会肾脏病学2016年学术年会</td>
+					</tr>
+					<tr>
+						<td class="br-first">患者教育</td>
+						<td class="br-second">患教资料、患者礼包、肾友会支持、腹透患者微信服务平台</td>
+					</tr>
+					<tr>
+						<td class="br-first">科室建设</td>
+						<td class="br-second">科室会议、科室拓展</td>
+					</tr>
+					<tr class="last">
+						<td class="br-first">达标内容</td>
+						<td class="br-second" style="border-bottom-left-radius:12px;">与华润双鹤共同管理腹透患者60人</td>
+					</tr>
+					<tr class="last">
+						<td class="br-first-last" colspan="2"></td>
+					</tr>
+				</tbody>
+			</table>
+			<table cellpadding="0" cellspacing="0" class="four-situation changshang hide" id="answer-result">
+				<caption class="br-caption"></caption>
+				<thead id="tourufanganhead">
+					<tr>
+						<th class="br-first br-first-program">投入方案</th>
+						<th class="br-second first-add"></th>
+					</tr>
+					<tr>
+						<th class="br-first">投入项目</th>
+						<th class="br-second">内&nbsp;&nbsp;&nbsp;容</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="br-first">硬件投入</td>
+						<td class="br-second">腹透中心配套硬件、腹透中心宣传硬件、腹透中心患教硬件</td>
+					</tr>
+					<tr>
+						<td class="br-first">学术会议</td>
+						<td class="br-second" style="border-bottom: 1px dashed white;">中华护理学会2016年腹膜透析临床护理培训班、中华医学会肾脏病学2016年学术年会</td>
+					</tr>
+					<tr>
+						<td class="br-first">患者教育</td>
+						<td class="br-second">患教资料、患者礼包、肾友会支持、腹透患者微信服务平台</td>
+					</tr>
+					<tr>
+						<td class="br-first">科室建设</td>
+						<td class="br-second">科室会议、科室拓展</td>
+					</tr>
+					<tr class="last">
+						<td class="br-first">达标内容</td>
+						<td class="br-second" style="border-bottom-left-radius: 12px;">与华润双鹤共同管理腹透患者30人</td>
+					</tr>
+					<tr class="last">
+						<td class="br-first-last" colspan="2"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="margin" id="tourufangan">
+				<button id="other">其他方案</button>
+				<button id="btnConfirm">确认</button>
+			</div>  
+		</div>
+		<!--第一轮 结果确认-->
+		<div class="first-round hide">
+			<table cellpadding="0" cellspacing="0" class="changshang">
+				<caption>投入方案</caption>
+				<thead>
+					<tr>
+						<th width="25%">投入项目</th>
+						<th>内容</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>硬件投入</td>
+						<td>腹透中心配套硬件、腹透中心宣传硬件、腹透中心患教硬件</td>
+					</tr>
+					<tr>
+						<td>学术会议</td>
+						<td>2016年第53届欧洲肾脏协会-欧洲透析和移植协会大会、中华护理学会2016年腹膜透析临床护理培训班、中华医学会肾脏病学2016年学术年会</td>
+					</tr>
+					<tr>
+						<td>患者教育</td>
+						<td>患教资料、患者礼包、肾友会支持、腹透患者微信服务平台</td>
+					</tr>
+					<tr>
+						<td>科室建设</td>
+						<td>科室会议、科室拓展</td>
+					</tr>
+					<tr>
+						<td class="br-first">达标内容</td>
+						<td>与华润双鹤共同管理腹透患者120人</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	
+	<!-- 百人中心   储备中心 -->
+	<div class="type hide">
+		<div class="type-content">
+			<button id="hundred-center"><img src="img/bairen.png" /></button>
+			<button id="reserve-center"><img src="img/chubei.png" /></button>
+		</div>
+	</div>
+	<!--百人中心  问卷  start -->
+	<!--选择投入  硬件投入 -->
+	<div class="br-hardware hide">
+		<table cellpadding="0" cellspacing="0" class="four-situation changshang">
+			<caption class="br-caption"></caption>
+			<thead>
+				<tr>
+					<th class="br-first br-first-program" style="padding-bottom: 20px;">硬件投入</th>
+					<th class="br-second first-add"></th>
+				</tr>
+				<tr>
+					<th class="br-first first-add-font">内容</th>
+					<th class="br-second first-add-font">细则</th>
+					<th class="hide">价值</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="click">
+					<td class="br-first">腹透中心配套硬件</td>
+					<td class="br-second">恒温箱、紫外线消毒灯、液体测量秤、污物桶等</td>
+					<td class="hide">6000</td>
+				</tr>
+				<tr class="click">
+					<td class="br-first">腹透中心宣传硬件</td>
+					<td class="br-second">中心介绍展板、患者教育展板、医护观摩展板等</td>
+					<td class="hide">6000</td>
+				</tr>
+				<tr class="click">
+					<td class="br-first">腹透中心患教硬件</td>
+					<td class="br-second">腹透介绍视频；根据科室情况配备电视或投影等硬件设备</td>
+					<td class="hide">8000</td>
+				</tr>	
+				<tr>
+					<td class="br-first"></td>
+					<td class="br-second"></td>
+				</tr>	
+				<tr class="br-last">
+					<td class="last-left-td" colspan="2"></td>					
+				</tr>
+			</tbody>
+		</table>
+		<input type="hidden" class="br-yingjian1-content" value="" />
+		<input type="hidden" class="br-yingjian1-detail" value="" />
+		<input type="hidden" class="br-yingjian2-content" value="" />
+		<input type="hidden" class="br-yingjian2-detail" value="" />
+		<input type="hidden" class="br-yingjian3-content" value="" />
+		<input type="hidden" class="br-yingjian3-detail" value="" />
+		<div class="margin">
+			<button id="br-hardware-next">下一页</button>
+		</div>
+	</div>
+	<!--选择投入  学术会议 -->
+	<div class="br-academic-conference hide">
+		<table cellpadding="0" cellspacing="0" class="four-situation changshang">
+			<caption class="br-caption"></caption>
+			<thead>
+				<tr>
+					<th class="br-first br-first-program" style="padding-bottom: 20px;">学术会议</th>
+					<th class="br-second first-add" colspan="2" style="border-right: none;"></th>
+				</tr>
+				<tr>
+					<th class="br-first first-add-font">内容</th>
+					<th class="br-second first-add-font">地点</th>
+					<th class="br-second first-add-font"  style="border-right: none;">培训对象</th>
+					<th class="hide">价值</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="click">
+					<td class="br-first">2016年第53届欧洲肾脏协会-欧洲透析和移植协会大会</td>
+					<td class="br-second">国外</td>
+					<td class="br-second"  style="border-right: none;">主任及专业务骨干</td>
+					<td class="hide">35000</td>
+				</tr>
+				<tr class="click">
+					<td class="br-first">腹透中心精益化高峰论坛</td>
+					<td class="br-second">国内</td>
+					<td class="br-second"  style="border-right: none;">主任及业务骨干</td>
+					<td class="hide">10000</td>
+				</tr>
+				<tr class="click">		
+					<td class="br-first">中华护理学会2016年腹膜透析临床护理培训班</td>
+					<td class="br-second">国内</td>
+					<td class="br-second"  style="border-right: none;">专职腹透医生护士</td>
+					<td class="hide">5000</td>
+				</tr>
+				<tr class="click">
+					<td class="br-first">中华医学会肾脏病学2016年学术年会</td>
+					<td class="br-second">国内</td>
+					<td class="br-second"  style="border-right: none;">主任及专业务骨干</td>
+					<td class="hide">5000</td>
+				</tr>
+				<tr class="br-last">
+					<td class="last-left-td" colspan="3"></td>					
+				</tr>
+			</tbody>
+		</table>
+		<input type="hidden" class="br-xueshu1-content" value="" />
+		<input type="hidden" class="br-xueshu1-detail" value="" />
+		<input type="hidden" class="br-xueshu2-content" value="" />
+		<input type="hidden" class="br-xueshu2-detail" value="" />
+		<input type="hidden" class="br-xueshu3-content" value="" />
+		<input type="hidden" class="br-xueshu3-detail" value="" />
+		<input type="hidden" class="br-xueshu4-content" value="" />
+		<input type="hidden" class="br-xueshu4-detail" value="" />
+		<div class="margin">
+			<button id="br-academic-next">下一页</button>
+		</div>
+	</div>
+	<!--选择投入  科室建设 -->
+	<div class="br-department-construction hide">
+		<table cellpadding="0" cellspacing="0" class="four-situation changshang">
+			<caption class="br-caption"></caption>
+			<thead>
+				<tr>
+					<th class="br-first br-first-program" style="padding-bottom: 20px;">科室建设</th>
+					<th class="br-second first-add"></th>
+				</tr>
+				<tr>
+					<th class="br-first first-add-font">内容</th>
+					<th class="br-second first-add-font">细则</th>
+					<th class="hide">价值</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="click">
+					<td class="br-first">科室会议</td>
+					<td class="br-second">肾内科室</td>
+					<td class="hide">3000</td>
+				</tr>
+				<tr class="click">
+					<td class="br-first">科室拓展</td>
+					<td class="br-second">肾内科室</td>
+					<td class="hide">1000</td>
+				</tr>
+				<tr>
+					<td class="br-first"></td>
+					<td class="br-second" rowspan="2"></td>
+				</tr>	
+				<tr>
+					<td class="br-first"></td>
+				</tr>	
+				<tr class="br-last">
+					<td class="last-left-td" colspan="2"></td>
+				</tr>
+			</tbody>
+		</table>
+		<input type="hidden" class="br-keshi1-content" value="" />
+		<input type="hidden" class="br-keshi1-detail" value="" />
+		<input type="hidden" class="br-keshi2-content" value="" />
+		<input type="hidden" class="br-keshi2-detail" value="" />
+		<div class="margin">
+			<button id="br-department-next">下一页</button>
+		</div>
+	</div>
+	<!--选择投入  患教 -->
+	<div class="br-patient-education hide">
+			<table cellpadding="0" cellspacing="0" class="four-situation changshang">
+				<caption class="br-caption"></caption>
+				<thead>
+					<tr>
+						<th class="br-first br-first-program" style="padding-bottom: 20px;">患者教育</th>
+						<th class="br-second first-add"></th>
+					</tr>
+					<tr>
+						<th class="br-first first-add-font">内容</th>
+						<th class="br-second first-add-font">细则</th>
+						<th class="hide">价值</th>
+					</tr>
+				</thead>
+			    <tbody>
+					<tr class="click">
+						<td class="br-first">患教资料</td>
+						<td class="br-second">透析日记、提醒卡、光盘、随访指南、肾病手册等(按月更新)</td>
+						<td class="hide">3000</td>
+					</tr>
+					<tr class="click">
+						<td class="br-first" style="line-height: 41px;">患者礼包</td>
+						<td class="br-second">礼包包括：腰带、蓝夹子、药盒、碘酒、棉签、肛袋等(按病人数量提供);赠送腹透用品,按季度进行发放</td>
+						<td class="hide">3000</td>
+					</tr>
+					<tr class="click">
+						<td class="br-first">肾友会支持</td>
+						<td class="br-second">按患者人数制定肾友会形式和频次</td>
+						<td class="hide">4000</td>
+					</tr>
+					<tr class="click">
+						<td class="br-first">华润双鹤<br>患者服务微信</td>
+						<td class="br-second">定期提供腹透操作、饮食保健、肾友活动、操作自测等方面的服务，另外还邀请腹透中心的专业医护人员作视频微访谈及音频广播等节目，为腹透患者提供更多样的知识推广方式</td>
+						<td class="hide">0</td>
+					</tr>
+					<tr>
+						<td class="br-first"></td>
+						<td class="br-second"></td>
+					</tr>
+					<tr class="br-last">
+						<td class="last-left-td" colspan="2"></td>
+					</tr>
+				</tbody>
+		</table>
+		<input type="hidden" class="br-huanjiao1-content" value="" />
+		<input type="hidden" class="br-huanjiao1-detail" value="" />
+		<input type="hidden" class="br-huanjiao2-content" value="" />
+		<input type="hidden" class="br-huanjiao2-detail" value="" />
+		<input type="hidden" class="br-huanjiao3-content" value="" />
+		<input type="hidden" class="br-huanjiao3-detail" value="" />
+		<input type="hidden" class="br-huanjiao4-content" value="" />
+		<input type="hidden" class="br-huanjiao4-detail" value="" />
+		<input type="hidden" class="br-huanjiao5-content" value="" />
+		<input type="hidden" class="br-huanjiao5-detail" value="" />
+		<div class="margin">
+			<button id="br-patient-next">提交</button>
+		</div>
+	</div>
+	<!--结果确认 自动生成投入方案-->
+	<div class="br-generating-scheme hide">
+			<!--<h3>生成方案结果</h3>-->
+		<table cellpadding="0" cellspacing="0" class="br-data changshang hide">
+			<caption class="br-caption"></caption>
+			<thead>
+				<tr>
+					<th class="br-first br-first-program" style="padding-bottom: 20px;">方案生成</th>
+					<th class="br-second first-add" colspan="2" style="text-align: center;">内容</th>
+				</tr>
+			</thead>
+			<tbody>
+					<tr>
+						<td class="br-first">硬件投入</td>
+						<td class="br-second" colspan="2">硬件投入</td>
+					</tr>
+					<tr>
+						<td class="br-first">学术会议</td>
+						<td class="br-second" colspan="2">硬件投入</td>
+					</tr>
+					<tr>
+						<td class="br-first">科室建设</td>
+						<td class="br-second" colspan="2">硬件投入</td>
+					</tr>
+					<tr>
+						<td class="br-first">患者教育</td>
+						<td class="br-second" colspan="2">硬件投入</td>
+					</tr>
+					<tr>
+						<td class="br-first">达标内容</td>						
+						<td class="br-second" colspan="2" style="border-bottom-left-radius:12px;">与华润双鹤共同管理腹透患者120人</td>
+					</tr>
+					<tr class="br-last">
+						<td class="last-left-td" colspan="3" style="border: none;"></td>
+					</tr>
+				</tbody>
+		</table>
+		<table cellpadding="0" cellspacing="0" class="brzhanshi-data changshang">
+			<caption class="br-caption"></caption>
+			<thead>
+				<tr>
+					<th class="br-first br-first-program" style="padding-bottom: 20px;">方案生成</th>
+					<th class="br-second first-add" colspan="2" style="text-align: center;">内容</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td class="table-nohover table-hover br-last" id="bryingjian-result">硬件投入</td>
+					<td class="br-second" colspan="2"></td>
+				</tr>
+				<tr>
+					<td class="table-nohover br-last" id="brxueshu-result">学术会议</td>
+					<td class="br-second" colspan="2"></td>
+				</tr>
+				<tr>
+					<td class="table-nohover br-last" id="brkeshi-result">科室建设</td>
+					<td class="br-second" colspan="2"></td>
+				</tr>
+				<tr>
+					<td class="table-nohover br-last" id="brhuanjiao-result">患者教育</td>
+					<td class="br-second" colspan="2"></td>
+				</tr>
+				<tr>
+					<td class="table-nohover br-last"></td>
+					<td class="br-second" colspan="2"></td>
+				</tr>
+				<tr class="br-last">
+					<td class="table-nohover br-last">达标内容</td>
+					<td class="br-second brdabiao" colspan="2" style="border-bottom-left-radius:12px;"></td>
+				</tr>
+				<tr class="br-last">
+					<td class="last-left-td" colspan="3" style="border: none;"></td>
+				</tr>
+				<tr class="hide">
+					<td class="table-nohover br-last"></td>
+					<td class="br-second" colspan="2"></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="margin">
+			<button id="br-again">重选</button>
+			<button id="br-generate">确认</button>
+			
+		</div>			
+	</div>
+	<!--百人中心 问卷  end-->
+			
+	<!--储备中心  问卷  start -->
+	<!--选择投入  硬件投入 -->
+	<div class="cb-hardware hide">
+		<table cellpadding="0" cellspacing="0" class="four-situation changshang">
+			<caption class="br-caption"></caption>
+			<thead>
+				<tr>
+					<th class="br-first br-first-program" style="padding-bottom: 20px;">硬件投入</th>
+					<th class="br-second first-add"></th>
+				</tr>
+				<tr>
+					<th class="br-first first-add-font">内容</th>
+					<th class="br-second first-add-font">细则</th>
+					<th class="hide">价值</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr class="click">
+					<td class="br-first">腹透中心配套硬件</td>
+					<td class="br-second">恒温箱、紫外线消毒灯、液体测量秤、污物桶等</td>
+					<td class="hide">2000</td>
+				</tr>
+				<tr class="click">
+					<td class="br-first">腹透中心宣传硬件</td>
+					<td class="br-second">中心介绍展板、患者教育展板、医护观摩展板等</td>
+					<td class="hide">2000</td>
+				</tr>
+				<tr class="click">
+					<td class="br-first">腹透中心患教硬件</td>
+					<td class="br-second">腹透介绍视频、根据科室情况配备电视、投影等硬件设备</td>
+					<td class="hide">1000</td>
+				</tr>			
+				<tr>
+					<td class="br-first"></td>
+					<td class="br-second"></td>
+				</tr>	
+				<tr class="br-last">
+					<td class="last-left-td" colspan="2"></td>
+				</tr>
+			</tbody>
+		</table>
+		<input type="hidden" class="cb-yingjian1-content" value="" />
+		<input type="hidden" class="cb-yingjian1-detail" value="" />
+		<input type="hidden" class="cb-yingjian2-content" value="" />
+		<input type="hidden" class="cb-yingjian2-detail" value="" />
+		<input type="hidden" class="cb-yingjian3-content" value="" />
+		<input type="hidden" class="cb-yingjian3-detail" value="" />
+		<div class="margin">
+			<button id="cb-hardware-next">下一页</button>
+		</div>
+	</div>
+	<!--选择投入  学术会议 -->
+	<div class="cb-academic-conference hide">
+		<table cellpadding="0" cellspacing="0" class="four-situation changshang">
+			<caption class="br-caption"></caption>
+			<thead>
+				<tr>
+					<th class="br-first br-first-program" style="padding-bottom: 20px;height: 60px;">学术会议</th>
+					<th class="br-second first-add" colspan="2" style="border-right: none;"></th>
+				</tr>
+				<tr>
+					<th class="br-first first-add-font">内容</th>
+					<th class="br-second first-add-font">地点</th>
+					<th class="br-second first-add-font"  style="border-right: none;">培训对象</th>
+					<th class="hide">价值</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="click">		
+					<td class="br-first">中华护理学会2016年腹膜透析临床护理培训班</td>
+					<td class="br-second">国内</td>
+					<td class="br-second"  style="border-right: none;">专职腹透医生护士</td>
+					<td class="hide">5000</td>
+				</tr>
+				<tr class="click">
+					<td class="br-first">中华医学会肾脏病学2016年学术年会</td>
+					<td class="br-second">国内</td>
+					<td class="br-second"  style="border-right: none;">主任及专业务骨干</td>
+					<td class="hide">5000</td>
+				</tr>
+				<tr>
+					<td class="br-first"></td>
+					<td class="br-second" colspan="2" rowspan="2"  ></td>					
+				</tr>	
+				<tr>
+					<td class="br-first"></td>
+				</tr>	
+				<tr class="br-last">
+					<td class="last-left-td" colspan="3"></td>				
+				</tr>
+			</tbody>
+		</table>
+		<input type="hidden" class="cb-xueshu1-content" value="" />
+		<input type="hidden" class="cb-xueshu1-detail" value="" />
+		<input type="hidden" class="cb-xueshu2-content" value="" />
+		<input type="hidden" class="cb-xueshu2-detail" value="" />
+		<div class="margin">
+			<button id="cb-academic-next">下一页</button>
+		</div>
+	</div>
+	<!--选择投入  科室建设 -->
+	<div class="cb-department-construction hide">
+		<table cellpadding="0" cellspacing="0" class="four-situation changshang">
+			<caption class="br-caption"></caption>
+			<thead>
+				<tr>
+					<th class="br-first br-first-program" style="padding-bottom: 20px;height: 60px;">科室建设</th>
+					<th class="br-second first-add"></th>
+				</tr>
+				<tr>
+					<th class="br-first first-add-font">内容</th>
+					<th class="br-second first-add-font">细则</th>
+					<th class="hide">价值</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="click">
+					<td class="br-first">科室会议</td>
+					<td class="br-second">肾内科室</td>
+					<td class="hide">2000</td>
+				</tr>
+				<tr class="click">
+					<td class="br-first">科室拓展</td>
+					<td class="br-second">肾内科室</td>
+					<td class="hide">500</td>
+				</tr>
+				<tr>
+					<td class="br-first"></td>
+					<td class="br-second" rowspan="2"></td>
+				</tr>	
+				<tr>
+					<td class="br-first"></td>
+				</tr>
+				<tr class="br-last">
+					<td class="last-left-td" colspan="2"></td>
+				</tr>
+			</tbody>
+		</table>
+		<input type="hidden" class="cb-keshi1-content" value="" />
+		<input type="hidden" class="cb-keshi1-detail" value="" />
+		<input type="hidden" class="cb-keshi2-content" value="" />
+		<input type="hidden" class="cb-keshi2-detail" value="" />
+		<div class="margin">
+			<button id="cb-department-next">下一页</button>
+		</div>
+	</div>
+	<!--选择投入  患教 -->
+	<div class="cb-patient-education hide">
+		<table cellpadding="0" cellspacing="0" class="four-situation changshang">
+			<caption class="br-caption"></caption>
+			<thead>
+				<tr>
+					<th class="br-first br-first-program" style="padding-bottom: 20px;">患者教育</th>
+					<th class="br-second first-add"></th>
+				</tr>
+				<tr>
+					<th class="br-first first-add-font">内容</th>
+					<th class="br-second first-add-font">细则</th>
+					<th class="hide">价值</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="click">
+					<td class="br-first">患教资料</td>
+					<td class="br-second">透析日记、提醒卡、光盘、随访指南、肾病手册等(按月进行更新)</td>
+					<td class="hide">500</td>
+				</tr>
+				<tr class="click">
+					<td class="br-first" style="line-height: 41px;">患者礼包</td>
+					<td class="br-second">礼包包括：腰带、蓝夹子、药盒、碘酒、棉签、肛袋等(按病人数量提供);赠送腹透用品,按季度进行发放</td>
+					<td class="hide">1000</td>
+				</tr>
+				<tr class="click">
+					<td class="br-first">肾友会支持</td>
+					<td class="br-second">按患者人数制定肾友会形式和频次</td>
+					<td class="hide">1000</td>
+				</tr>
+				<tr class="click">
+					<td class="br-first">华润双鹤<br>患者服务微信</td>
+					<td class="br-second">定期提供腹透操作、饮食保健、肾友活动、操作自测等方面的服务，另外还邀请腹透中心的专业医护人员作视频微访谈及音频广播等节目，为腹透患者提供更多样的知识推广方式。</td>
+					<td class="hide">0</td>
+				</tr>
+				<tr>
+					<td class="br-first"></td>
+					<td class="br-second"></td>
+				</tr>
+				<tr class="br-last">
+					<td class="last-left-td" colspan="2"></td>
+				</tr>
+			</tbody>
+		</table>
+		<input type="hidden" class="cb-huanjiao1-content" value="" />
+		<input type="hidden" class="cb-huanjiao1-detail" value="" />
+		<input type="hidden" class="cb-huanjiao2-content" value="" />
+		<input type="hidden" class="cb-huanjiao2-detail" value="" />
+		<input type="hidden" class="cb-huanjiao3-content" value="" />
+		<input type="hidden" class="cb-huanjiao3-detail" value="" />
+		<input type="hidden" class="cb-huanjiao4-content" value="" />
+		<input type="hidden" class="cb-huanjiao4-detail" value="" />
+		<div class="margin">
+			<button id="cb-patient-next">提交</button>
+		</div>
+	</div>
+	<!--结果确认 自动生成投入方案-->
+	<div class="cb-generating-scheme hide">
+		<!--<h3>生成方案结果</h3>-->
+		<table cellpadding="0" cellspacing="0" class="cb-data changshang hide">
+			<caption class="br-caption"></caption>
+			<thead>
+				<tr>
+					<th class="br-first br-first-program" style="padding-bottom: 20px;">方案生成</th>
+					<th class="br-second first-add" colspan="2" style="text-align: center;">内容</th>
+				</tr>
+			</thead>
+			<tbody>
+					<tr>
+						<td class="br-first">硬件投入</td>
+						<td class="br-second" colspan="2">硬件投入</td>
+					</tr>
+					<tr>
+						<td class="br-first">学术会议</td>
+						<td class="br-second" colspan="2">硬件投入</td>
+					</tr>
+					<tr>
+						<td class="br-first">科室建设</td>
+						<td class="br-second" colspan="2">硬件投入</td>
+					</tr>
+					<tr>
+						<td class="br-first">患者教育</td>
+						<td class="br-second" colspan="2">硬件投入</td>
+					</tr>
+					<tr>
+						<td class="br-first">达标内容</td>
+						<td class="br-second" colspan="2" style="border-bottom-left-radius:12px;">与华润双鹤共同管理腹透患者120人</td>
+					</tr>
+					<tr class="br-last">
+						<td class="last-left-td" colspan="3" style="border: none;"></td>
+					</tr>
+				</tbody>
+		</table>
+		<table cellpadding="0" cellspacing="0" class="cbzhanshi-data changshang">
+			<caption class="br-caption"></caption>
+			<thead>
+				<tr>
+					<th class="br-first br-first-program" style="padding-bottom: 20px;text-align: center;">方案生成</th>
+					<th class="br-second first-add" colspan="2" style="text-align: center;">内容</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td class="table-nohover table-hover br-first" id="cbyingjian-result">硬件投入</td>
+					<td class="br-second" colspan="2"></td>
+				</tr>
+				<tr>
+					<td class="table-nohover br-first" id="cbxueshu-result">学术会议</td>
+					<td class="br-second" colspan="2"></td>
+				</tr>
+				<tr>
+					<td class="table-nohover br-first" id="cbkeshi-result">科室建设</td>
+					<td class="br-second" colspan="2"></td>
+				</tr>
+				<tr>
+					<td class="table-nohover br-first" id="cbhuanjiao-result">患者教育</td>
+					<td class="br-second" colspan="2"></td>
+				</tr>
+				<tr>
+					<td class="table-nohover br-last"></td>
+					<td class="br-second" colspan="2"></td>
+				</tr>
+				<tr class="br-last">
+					<td class="table-nohover br-last">达标内容</td>
+					<td class="br-second cbdabiao" colspan="2" style="border-bottom-left-radius:12px;"></td>
+				</tr>
+				<tr class="br-last">
+					<td class="last-left-td" colspan="3" style="border: none;"></td>
+				</tr>
+				<tr class="hide">
+					<td class="table-nohover br-last"></td>
+					<td class="br-second" colspan="2"></td>
+				</tr>
+			</tbody>
+		</table>
+		<!--<div class="cbdabiao"></div>-->
+		<div class="margin">
+			<button id="cb-again">重选</button>
+			<button id="cb-generate">确认</button>
+		</div>			
+	</div>
+	<!--储备中心 问卷  end-->
+		
+	<!--结果确认 自动生成投入方案 提交结果-->
+	<div class="save-result hide">
+		<!--<h3>生成方案结果</h3>-->
+		<table cellpadding="0" cellspacing="0" class="changshang">
+			<thead>
+				<tr>
+					<th></th>
+					<th>内&nbsp;&nbsp;&nbsp;容</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>硬件投入</td>
+					<td>硬件投入</td>
+				</tr>
+				<tr>
+					<td>学术会议</td>
+					<td>硬件投入</td>
+				</tr>
+				<tr>
+					<td>科室建设</td>
+					<td>硬件投入</td>
+				</tr>
+				<tr>
+					<td>患者教育</td>
+					<td>硬件投入</td>
+				</tr>
+				<tr>
+					<td class="br-first">达标内容</td>
+					<td colspan="2">与华润双鹤共同管理腹透患者120人</td>
+				</tr>
+			</tbody>
+		</table>
+		<input type="hidden" name="questype" id="questype" value="" />
+		<div class="margin">
+			<button id="save-result">保存结果</button>
+		</div>			
+	</div>
+	<!--生成方案  html-->
+	<div class="result-html hide">
+		<h3>华润双鹤与<span class="join-hospital"></span>医院肾内科共建腹透中心合作方案</h3>
+		<img src="img/result-pic.jpg" width="100%" />
+		<h4>一、华润双鹤概况 </h4>
+		<p class="text-indent">华润双鹤药业股份有限公司是大型国有控股医药上市公司，年药品销售额超过70亿元，隶属于全球500强企业华润集团，总部位于北京。华润双鹤建设有国际一流水平的新药研发中心，是第一家通过中国 GMP 认证的样板企业，被国家确立为高新技术企业，拥有遍布全国的 13 个生产基地，从日本、德国、法国、意大利等引进的先进生产线 60 多条，生产质量通过欧盟认证，成为为数不多可直接出口药品制剂的中国公司。主营业务涵盖新药研发、原料药、药品制剂、制药装备的生产及医药销售服务等产业链，华润双鹤在中国上市的主要核心产品线涉及常规及治疗性大输液、心脑血管、内分泌、肾科及儿科用药和普药类等领域的专利和非专利产品近千个。</p>
+	        <!--
+	        	作者：knewspring@163.com
+	        	时间：2016-05-06
+	        	描述：删除图片
+	        	<img src="img/res1.jpg" width="100%" />
+	        -->
+		<h4>二、合作背景</h4>
+		<p class="text-indent">2011年，华润双鹤通过股权置换的方式完成对上海长富腹膜透析液的收购，华润双鹤主动担负药品生产企业的社会责任，在完善产品质量管理的同时完成华润双鹤腹透中心建设项目的战略规划。该项目以技术投入为手段，共同管理患者为主要目标，与医院肾内科室签约共建腹透中心计划。项目执行4年来，华润双鹤已在全国18个省市自治区共建立腹膜透析中心90家，共管理尿毒症患者4000多人。 2016年华润双鹤腹透中心项目重点支持地级医院，以打造“百家万人“项目的战略目标，亟待与更多科室开展腹透中心共建合作。</p>
+		<h4>三、<span class="join-hospital"></span>医院-华润双鹤“百人中心”建设合作目标：</h4>
+		<p>1、患者管理：有效治疗并管理腹膜透析患者100人及以上，提高腹透治疗率和生存率，减少患者掉队率。</p>
+		<p>2、技术水平：支持腹透中心医护人员参与国内外学术会议及培训学习，学习最新最前沿的腹膜透析技术，成为区域腹膜透析的示范中心。</p>
+		<p>3、教学中心：成为区域的教学中心，为区域及其它中心培养专业的腹透医护人员</p>
+		<h4>四、<span class="join-hospital"></span>医院-华润双鹤“百人中心”建设实施计划：</h4>
+		<p class="text-indent">为全面辅助<span class="join-hospital"></span>医院腹透事业发展，共同管理腹膜透析患者，提高患者生存率，华润双鹤提供包括：硬件升级、学术会议、患者服务、科室建设等各项支持，与<span class="join-hospital"></span>医院共建华润双鹤腹膜透析“百人中心”。</p>
+		<h5>1、硬件升级</h5>
+		<p class="text-indent">华润双鹤根据现腹透中心情况及医院需	求提供菜单式升级方案，实现个性化、信息化管理。</p>
+		<div id="daanyingjian"></div>
+		<table class="yingjianresult" id="yingjianresult" width="100%" class="changshang">
+			<thead>
+				<tr>
+					<th>硬件升级菜单</th><th>升级介绍</th>
+				</tr>
+			</thead>
+			<tbody id="yingjianresult1">
+				
+			</tbody>
+		</table>
+		
+		
+		<h5>2、学术会议</h5>
+		<p class="text-indent">专业的腹透医护人才是建立高质量腹透中心的关键，华润双鹤为中心各骨干医护人员提供国内外学术培训、学习、交流机会，促进腹膜透析理论知识、置管技术、营养、患者管理以及科研能力等水平的提高，满足科室共同管理患者100人以上的人才培养计划。2016年华润双鹤腹透中心技术培训计划：</p>
+		<div id="daanxun"></div>
+		<table class="xueshuresult" id="xueshuresult" width="100%" class="changshang">
+			<thead>
+				<tr>
+					<th>内容</th><th>地点</th><th>培训对象</th>
+				</tr>
+			</thead>
+			<tbody id="xueshusult1">
+				
+			</tbody>
+		</table>
+		
+		
+		<h5>3、患者教育</h5>
+		<p class="text-indent">为更好地实现患者管理和服务，提升科室的品牌影响力和区域患者的就诊率，减少患者的流失，华润双鹤协助科室开展肾友会等活动和发放患者礼品、资料等方式提供有效的患者服务，并可帮助科室上线患者管理系统，以及为患者提供微信平台服务。</p>
+		<div id="daanhuanjiao"></div>
+		<table class="huanjiaoresult" id="huanjiaoresult" width="100%" class="changshang">	
+			<thead>
+				<tr>
+					<th>项目</th><th>方法及时间</th>
+				</tr>
+			</thead>
+			<tbody id="huanjiaosult1">
+				
+			</tbody>
+		</table>
+		
+		<h5>4、科室建设</h5>
+		<p class="text-indent">为提高腹透中心团队凝聚力，增强学术氛围，华润双鹤可根据需求为腹透中心提供多项科室活动。</p>
+		<div id="daankeshi"></div>
+		<table class="keshiresult" id="keshiresult" width="100%">
+			<thead>
+				<tr>
+					<th>项目</th><th>细则</th>
+				</tr>
+			</thead>
+			<tbody id="keshisult1">
+				
+			</tbody>
+		</table>
+		
+		<h5>5、其他支持</h5>
+		<p class="text-indent">为进一步促进腹透中心患者治疗的便利性和就诊的稳定性，华润双鹤将为腹透中心提供优质腹透耗材的配送服务。华润双鹤优选了国内外优质优价的腹透耗材生产厂家作为战略合作伙伴。协助中心相关耗材配送服务，附产品厂家名单：</p>
+		<table width="100%" class="changshang" id="otherSupportth">	
+			<thead>
+				<tr>
+					<th>产品名称</th><th>生产厂商</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2">腹内管</td><td>JOLINE GmbH &Co. KG有限公司</td>
+				</tr>
+				<tr>
+					<td>天津优威医疗器械有限公司</td>
+				</tr>
+				<tr>
+					<td>隧道针</td><td>百洛普医疗器械有限公司</td>
+				</tr>
+				<tr>
+					<td>钛接头</td><td>天津优威医疗器械有限公司</td>
+				</tr>
+				<tr>
+					<td rowspan="2">外接管</td><td>天津优威医疗器械有限公司</td>
+				</tr>
+				<tr>
+					<td>百洛普医疗器械有限公司</td>
+				</tr>
+				<tr>
+					<td rowspan="2">碘伏帽</td><td>天津优威医疗器械有限公司</td>
+				</tr>
+				<tr>
+					<td>百洛普医疗器械有限公司</td>
+				</tr>
+				<tr>
+					<td rowspan="2">恒温箱</td><td>上海一恒医疗器械有限责任公司</td>
+				</tr>
+				<tr>
+					<td>北京福意联电器有限公司</td>
+				</tr>
+				<tr>
+					<td>其他腹膜透析相关产品</td><td>合作代理商</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>你我携手 安心腹透</h3>
+		<img src="img/erweima.jpg" style="margin: 0 30%; width: 40%;" />
+		<div class="dibu">
+		    <span>院  方：</span><span>协议方：华润双鹤药业(上海)有限公司</span>
+		    <span>代理人：</span><span>代理人：</span>
+		    <span>时   间：</span><span>时   间：</span>
+		</div>
+	</div>
+	<!--<div id="floatbutton" class="hide">
+		<a href="javascript:printResult();">打印</a>
+	<!--<a href="javascript:location.reload();">再来一轮</a>-->
+	</div>
+	<script src="js/jquery.touchSwipe.min.js"></script>
+	<script>
+	
+	function printResult(){
+		var url = "list-detail.html?id="+$("#resultid").val();
+		location.href = url;     
+		//printHtmlElement.printHtml(url, {pageTitle: '', printMode: 'popup'});     
+	}
+	
+	$(document).ready(function() {
+		/*
+		var height=$(window).height();
+		//$('body').css("height",height);
+		$('.add').css("height",height);
+		$('.investigation').css("height",height);
+		$('.scheme').css("height",height);
+		$('.type').css("height",height);
+		$('.br-hardware').css("height",height);
+		$('.br-academic-conference').css("height",height);
+		$('.br-department-construction').css("height",height);
+		$('.br-patient-education').css("height",height);
+		$('.br-generating-scheme').css("height",height);
+		$('.').css("height",height);
+		$('.cb-academic-conference').css("height",height);
+		$('.cb-department-construction').css("height",height);
+		$('.cb-patient-education').css("height",height);
+		$('.cb-generating-scheme').css("height",height);
+		$('.save-result').css("height",height);
+		*/
+		adjustElement();
+		
+	    var nowpage = 0;
+	    //给最大的盒子增加事件监听
+	    $(".containers").swipe({
+	        swipe:function(event, direction, distance, duration, fingerCount) {
+	             if(direction == "up"){
+	                nowpage = nowpage + 1;
+	             }else if(direction == "down"){
+	                nowpage = nowpage - 1;
+	             }
+	             if(nowpage > 2){
+	                nowpage = 2;
+	             }
+	             if(nowpage < 0){
+	                nowpage = 0;
+	             }
+	            $(".containers").animate({"top":nowpage * -100 + "%"},200);
+	            $(".page").eq(nowpage).addClass("cur").siblings().removeClass("cur");
+	        }
+	    });
+	});
+	</script>
+	<script type="text/javascript"  src="js/touch.js"></script>
+	<script type="text/javascript"  src="js/bigscreen.js"></script>
+	</body>
+</html>

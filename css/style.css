@@ -1,0 +1,980 @@
+﻿table{
+	border-spacing:0!important;
+	border-collapse:collapse!important;
+	border: none;	
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	width: 100%; 
+	height: 100%;
+}
+
+a:link,a:hover,a:visited{
+	text-decoration: none;
+}
+.hide{
+	display: none;
+}
+.add{
+	background: url(../img/p1-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+}
+.visit-hospital{
+	position: absolute;
+	bottom: 12%;
+	right: 50%;
+}
+#hospital{
+	border: 1px solid #616c71 !important;
+	border: none;
+	padding: 4px;
+	border-radius: 3px;
+	font-size: 25px;
+	/*新添内容*/
+	height:60px;
+	width: 810px;
+	margin-left: 35px;
+}
+/*轮播图解除覆盖干扰*/
+.sky-carousel{
+	/*width: 90%!important;
+	margin: 0!important;*/
+}
+.sc-overlay-left{
+	display: none!important;
+}
+.p1-title{
+	margin-top: -12px;
+    margin-right: 10px;
+}
+.containers { width: 100%; height: 100%; position: absolute; left: 0; top: 0%; }
+.containers .page { 
+	height: 100%; 
+	position: relative;
+	text-align:center;
+	width: 100%;  
+	}
+.containers .page0{
+
+}
+.p1-content,.p2-content,.p3-content{
+	height: 100%;
+}
+.p1-content img,.p2-content img,.p3-content img{
+	height: 100%;
+    width: 100%;
+}
+.literature{
+	color: #474747;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+.introduce,.huarui-bg1,.huarui-bg2{
+    width: 80%;
+    color: #474747;
+    margin: 0 auto;
+}
+.introduce p,.huarui-bg1 p{
+	text-align: left;
+	font-size: 25px;
+}
+.huarui-bg2>img{
+	width: 33%;
+	float: left;
+}
+.select{
+	color: #4a4a4a !important;
+	background: #d8d8d8;
+	padding: 5px 15px;
+    border-radius: 5px;
+    float: right;
+	margin-top: 40px;
+	font-size: 25px;
+}
+.select:link{
+	background: #d8d8d8;
+}
+.scheme{
+	width: 100%;
+	height: 100%;
+	background: url(../img/resultNew-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.type{
+	width: 100%;
+	height: 100%;
+	background: url(../img/select-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.save-result,.br-hardware,.br-academic-conference,.br-department-construction,.br-patient-education,.br-generating-scheme,.cb-hardware,.cb-academic-conference,.cb-department-construction,.cb-patient-education,.cb-generating-scheme{
+	width: 100%;
+	height: 100%;
+	background: url(../img/resultNew-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.first{
+	background: url(../img/Q1-bg.jpg) no-repeat;
+}
+.second{
+	background: url(../img/Q2-bg.jpg) no-repeat;
+}
+.third{
+	background: url(../img/Q3-bg.jpg) no-repeat;
+}
+.four{
+	background: url(../img/Q4-bg.jpg) no-repeat;
+}
+.five{
+	background: url(../img/Q5-bg.jpg) no-repeat;
+}
+.six{
+	background: url(../img/Q6-bg.jpg) no-repeat;
+}
+.seven{
+	background: url(../img/Q7-bg.jpg) no-repeat;
+}
+.eighth{
+	background: url(../img/Q8-bg.jpg) no-repeat;
+}
+.title{
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	margin: 0 auto;
+}
+.title h3{
+	margin: 20px auto;
+	font-size: 51px;
+    font-weight: 500;
+    width: 60%;
+    color: #2ea7e0;
+    padding-top: 6%;
+    margin-top: 38px!important;
+    letter-spacing: 5px;
+}
+.title .content{
+	margin: 0 auto;
+	width: 75%;
+	margin-top: 60px;
+}
+
+.content a{
+	display: block;
+	text-decoration: none;
+	color: #455260;
+	line-height: 40px;
+    font-size: 45px;
+    margin: 5px 0;
+    /*新添内容*/
+    width: 50%;
+    float: left;
+    margin-top: 84px;
+    /*letter-spacing: 5px;*/
+}
+#questions1 a:nth-of-type(1),#questions1 a:nth-of-type(3),#questions2 a:nth-of-type(1),#questions2 a:nth-of-type(3),#questions4 a:nth-of-type(1),#questions4 a:nth-of-type(3),#questions4 a:nth-of-type(5),#questions5 a:nth-of-type(1),#questions5 a:nth-of-type(3){width: 40%;margin-left: 10%;}
+#questions1 a:nth-of-type(2),#questions1 a:nth-of-type(4),#questions2 a:nth-of-type(2),#questions2 a:nth-of-type(4),#questions4 a:nth-of-type(2),#questions4 a:nth-of-type(4),#questions4 a:nth-of-type(6),#questions5 a:nth-of-type(2),#questions5 a:nth-of-type(4){width: 50%;padding-left: 10.5%;}
+#questions6 a:nth-of-type(1),#questions6 a:nth-of-type(2),#questions6 a:nth-of-type(3),#questions8 a:nth-of-type(1),#questions8 a:nth-of-type(2),#questions8 a:nth-of-type(3){margin-left: 10%;}
+#questions3 a:nth-of-type(1),#questions3 a:nth-of-type(3){width: 35%;margin-left: 10%;}
+#questions3 a:nth-of-type(2),#questions3 a:nth-of-type(4){width: 50%;}
+#questions7 a:nth-of-type(1),#questions7 a:nth-of-type(3),#questions7 a:nth-of-type(5){width: 50%;margin-left: 10%;}
+#questions7 a:nth-of-type(2),#questions7 a:nth-of-type(4){width: 40%;}
+
+.content a:nth-of-type(1),.content a:nth-of-type(2){margin-top: 30px;}
+#questions4,#questions6,#questions8{margin-top: 0;}
+#answer4,#answer6,#answer7{margin-top: 40px;}
+#ans8{margin-top: 390px;}
+.content a span{margin-right: 30px;}
+/*新添内容*/
+.content .clear{
+	clear: both;
+}
+/*新添内容*/
+#questions6 a,#questions8 a{
+	display: block;
+	text-decoration: none;
+    margin: 5px 0;
+    width: 100%;
+	color: #455260;
+	line-height: 40px;
+    font-size: 45px;
+    margin: 5px 0;
+    /*新添内容*/
+    float: left;
+    letter-spacing: 5px;
+}
+#questions8 a{margin-top: 30px;}
+#questions4 a,#questions6 a,#questions7 a,#questions8 a{margin-top: 60px;}
+#questions7{margin-top: 40px;}
+.content a span{
+	position: relative;
+	top:4px;
+} 
+
+.answer-page{
+	margin: 0 auto;
+	min-height: 30px;
+	width: 50%;
+	padding-top: 20px;
+	margin-top: 80px;
+}
+.answer-page button:nth-of-type(2){position: relative;left: 7%;}
+.first .answer-page{width: 57%;}
+.prev,.next,.submit,.next7{
+	color: #FFFFFF !important;
+    background: #d9d9d9;
+    padding: 1px 0;
+    text-decoration: none;    
+    font-size: 50px; 
+    width: 330px;
+    height: 110px;
+}
+#nextpage{
+	color: #FFFFFF !important;
+    background: #f5a21b;
+    padding:5px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 35px;  
+    float:right;
+    margin-right: 15%;
+    width: 220px;
+    height: 65px;
+}
+#btnsubmit{padding-right: 0;}
+#pdfview{
+}
+
+.prev:hover,.prev:focus,.next:hover,.next:focus,.submit:hover,.presubmitv:focus,.next7:hover,.next7:focus{
+	color: #FFFFFF !important;
+}
+.choice-title{
+ 	color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 88px;
+    font-weight: bold;
+    padding-top: 10.5%;
+    letter-spacing: 5px;
+}
+.selection-box{
+    width: 43px;
+    height: 43px;
+    border: 1px solid #455260;
+    border-radius: 1px;
+    display: inline-block;
+    margin: 0 10px;
+} 
+.prev{
+	float: left;
+	background: #54667a;
+}
+.next,.submit,.next7{	
+    float: right;
+    background: #f5a21b;
+}
+
+.loading-div{
+	background: #ccc;
+	background: url(../img/lunbo-bg.jpg);
+}
+.loading{
+	width: 100%;
+	height: 100%;
+}
+/*.loading{
+	position: absolute;
+	top: 45%;
+	left: 47%;
+	width: 30%;
+}*/
+.margin{
+	margin: -1px auto;
+	width: 70%;
+}
+.red span{
+	border:1px solid #91d646;
+	background:#91d646;
+}
+
+td,th{
+	border-width:1px 1px 1px 1px;
+	padding: 10px;
+ }
+th{
+	text-align: center;
+	background: #f5a21b;
+	color: #fdfcfc;
+}
+#activeData .br-caption,.save-result .br-caption{
+	width: 25%;
+	height: 23px;
+	color: #fff;
+	background: #f8b815;
+	width: 320px;
+	margin-bottom: 0;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	font-size: 20px;
+}
+.table > thead > tr > th{
+	text-align: center;
+	background: #f5a21b;
+	color: #fdfcfc;
+	border-bottom:1px dashed white !important;
+}
+.table-hover > tbody > tr:hover{
+	cursor: pointer;
+}
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+}
+
+.nocursor{
+	color: #000000 !important; 
+}
+.nocursor:hover{
+	cursor:default !important; 
+}
+.gray{
+	background-color: #E86767!important;
+}
+
+.scheme{
+	padding-top: 6%;
+}
+.save-result{
+	padding-top: 13%;
+}
+.scheme table,.save-result table{
+	width: 70%;
+    margin: 0 auto;
+}
+#addhospital{
+	padding: 0;
+}
+#other,
+#br-hardware-next,
+#br-academic-next,
+#br-department-next,
+#br-patient-next,
+#cb-hardware-next,
+#cb-academic-next,
+#cb-department-next,
+#cb-patient-next,
+#br-again,
+#cb-again,
+#save-result{
+	float: right;
+	margin-top: 10px;
+	border: none;
+	height: 64px;
+	font-size: 32.7px;
+	font-family:"微软雅黑";
+}
+#addhospital{height: 50px;float: right;margin-top: 44px;border: none;}
+#br-hardware-next{
+	margin-top: -1px!important;
+	border-bottom-left-radius:6px;
+	border-bottom-right-radius:6px;
+}
+#br-hardware-next,#br-academic-next,#br-department-next,#br-patient-next,#br-generate,#br-again,#cb-hardware-next,#cb-academic-next,#cb-department-next,#cb-patient-next,#cb-generate,#cb-again,#save-result{
+	background: #0295da;
+	padding:5px 20px;
+	color: #FFFFFF;
+	width: 122px;
+	height: 40px;
+}
+#br-generate,#cb-generate{background: #f5a21b;}
+#save-result{
+	margin-top: 0;
+	border: none;
+	margin-right: 5%;
+	border-bottom-left-radius: 24px;
+	border-bottom-right-radius: 24px;
+	background: linear-gradient(to bottom,#357ea9,#3abcea);
+}
+#btnConfirm{
+	height: 60px;
+	width: 197px;
+	background: #f5a21b;
+	border-bottom-left-radius:24px;
+	background: linear-gradient(to bottom,#c55904,#fac60e);
+}
+#other{
+	height: 60px;
+	width: 237px;
+	background: #0295da;
+	border-bottom-right-radius:6px;
+	background: linear-gradient(to bottom,#357ea9,#3abcea);
+}
+#btnConfirm,#other{
+	/*修改*/
+	margin-top: 0;
+	color: #FFFFFF;
+	padding: 5px 20px;
+	float: right;
+	box-shadow: -1px -1px 3px #888888;
+	-ms-box-shadow: -1px -1px 3px #888888;
+	-webkit-box-shadow: -1px -1px 3px #888888;
+	-moz-box-shadow: -1px -1px 3px #888888;
+	-o-box-shadow: -1px -1px 3px #888888;
+	font-family: "微软雅黑";
+	font-size: 45px;
+}
+#hundred-center{
+	margin-right: 20%;
+	float: left;
+	padding: 0;
+	width: 40%;
+} 
+#reserve-center{
+	float: left;
+	padding: 0;
+	width: 40%;
+}
+#hundred-center img,#reserve-center img{
+	max-width: 100%;
+}
+.type-content{
+	width: 55%;
+	margin: 0 auto;
+	padding-top: 20%;
+	text-align: center;
+}
+.picture{
+	height: 100%;
+	width: 100%;	
+	background: url(../img/lunbo-bg.jpg) no-repeat;
+	background-size:100% 100%;
+}    
+.phase-row{
+	padding-top: 10%;
+}
+.br-hardware,.br-academic-conference,.br-department-construction,.br-patient-education,.br-generating-scheme,.cb-hardware,.cb-academic-conference,.cb-department-construction,.cb-patient-education,.cb-generating-scheme{
+	padding-top: 13%;
+}
+.br-academic-conference{padding-top: 7%;}
+.br-patient-education,.cb-patient-education{padding-top:9.8%}
+.br-hardware table,
+.br-academic-conference table,
+.br-department-construction table,
+.br-patient-education table,
+.br-generating-scheme table,
+.cb-hardware table,
+.cb-academic-conference table,
+.cb-department-construction table,
+.cb-patient-education table,
+.cb-generating-scheme table{
+	width: 70%;
+	margin: 0 auto;
+}
+caption{
+	text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0295da;
+}
+.cb-generating-scheme caption{
+	color: #0295da;
+}
+.picture-page{
+	text-align: center;
+    margin-top: 1%;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    z-index: 22;
+}
+/*硬件升级、技术培训、患者服务、科室建设设计部分的*/
+.br-hardware .br-caption,.br-academic-conference .br-caption,.br-department-construction .br-caption,.br-patient-education .br-caption,.scheme .br-caption{
+	color: #fff;
+	background: #f8b815;
+	width: 320px;
+	margin-bottom: 0;
+	font-size: 20px;
+}
+.br-caption{
+	height: 20px;
+	color: #fff;
+	background: #f8b815;
+	width: 320px;
+	margin-bottom: 0;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	font-size: 20px;
+}
+.cbzhanshi-data .br-first,.save-result .br-first,.brzhanshi-data .br-first,.save-result .br-first,.br-hardware .br-first,.br-academic-conference .br-first,.br-department-construction .br-first,.br-patient-education .br-first,.cb-hardware .br-first,.cb-academic-conference .br-first,.cb-department-construction .br-first,.cb-patient-education .br-first,.scheme .br-first{
+	width: 320px;
+	background: #f5a21b;
+	color: white;
+	text-align: center;
+	border-bottom: 1px dashed white;
+	height: 100px;
+	font-size: 28.5px;	
+}
+.scheme table  tr .br-first,.save-result  table .br-first,.save-result table .br-first,.br-hardware  table .br-first,.cb-hardware  table .br-first,.br-academic-conference table .br-first,.cb-academic-conference table .br-first,.br-department-construction table .br-first,.cb-department-construction table .br-first,.br-patient-education table .br-first,.cb-patient-education table .br-first,.brzhanshi-data .br-last,.cbzhanshi-data .br-last,.brzhanshi-data .br-first,.cbzhanshi-data .br-first{letter-spacing:3px;}
+.scheme table  thead tr:nth-of-type(2) th:first-child,.save-result  table  thead tr:nth-of-type(2) th:first-child{padding-left:25px!important}
+.scheme table thead  tr:nth-of-type(1) th,.save-result table thead  tr:nth-of-type(1) th,.br-hardware table thead  tr:nth-of-type(1) th,.br-academic-conference  table thead  tr:nth-of-type(1) th,.br-department-construction  table thead  tr:nth-of-type(1) th,.br-patient-education  table thead  tr:nth-of-type(1) th,.cb-hardware table thead  tr:nth-of-type(1) th,.cb-academic-conference  table thead  tr:nth-of-type(1) th,.cb-department-construction  table thead  tr:nth-of-type(1) th,.cb-patient-education  table thead  tr:nth-of-type(1) th,.br-generating-scheme table thead  tr:nth-of-type(1) th,.cb-generating-scheme table thead  tr:nth-of-type(1) th{text-shadow:-2px 0px 3px #000;}
+.scheme table thead  tr:nth-of-type(2) th,.save-result table thead  tr:nth-of-type(2) th,.br-hardware table thead  tr:nth-of-type(2) th,.br-department-construction  table thead  tr:nth-of-type(2) th,.br-patient-education  table thead  tr:nth-of-type(2) th,.cb-hardware table thead  tr:nth-of-type(2) th,.cb-department-construction  table thead  tr:nth-of-type(2) th,.cb-patient-education  table thead  tr:nth-of-type(2) th{text-shadow:-1px 0px 1px #000;padding-left:0!important;}
+.cb-academic-conference  table thead  tr:nth-of-type(2) th,.br-academic-conference  table thead  tr:nth-of-type(2) th{text-shadow:-1px 0px 1px #000;}
+
+.scheme .first-add,.br-hardware .first-add,.br-academic-conference .first-add,.br-department-construction .first-,.br-patient-education .first-add,.cb-hardware .first-add,.cb-academic-conference .first-add,.cb-department-construction .first-add,.cb-patient-education .first-add,.scheme .first-add{
+	border-top: none;
+	height: 41px!important;
+	font-size: 26px;
+	font-family: "微软雅黑";
+}
+.cbzhanshi-data .br-second,.brzhanshi-data .br-second,#activeData .br-second,.save-result .br-second,.br-hardware .br-second,.br-academic-conference .br-second,.br-department-construction .br-second,.br-patient-education .br-second,.cb-hardware .br-second,.cb-academic-conference .br-second,.cb-department-construction .br-second,.cb-patient-education .br-second,.scheme .br-second{
+	/*background: #0295da;*/
+	background: -webkit-linear-gradient(left,#4998c5,#4393c1);
+	color: white;
+	text-align: left;	
+        padding-left:54px;
+	height: 100px;
+	font-size: 24px;
+	font-family: "微软雅黑";
+	/*7-17*/
+	padding-top: 10px;
+}
+.br-academic-conference .br-second,.cb-academic-conference .br-second{padding-left:0;}
+.cbzhanshi-data .first-add,.brzhanshi-data .first-add,.save-result .first-add,#activeData .first-add,.br-hardware .first-add,.br-academic-conference .first-add,.br-department-construction .first-add,.br-patient-education .first-add,.cb-hardware .first-add,.cb-academic-conference .first-add,.cb-department-construction .first-add,.cb-patient-education .first-add,.scheme .first-add{
+	text-align: center;
+    padding-left: 0;
+    border-top-right-radius: 12px;	
+    font-size: 40px;;
+    font-family: "黑体";
+}
+.cbzhanshi-data .first-add-font,.brzhanshi-data .first-add-font,.save-result .first-add-font,#activeData .first-add-font,.br-hardware .first-add-font,.br-academic-conference .first-add-font,.br-department-construction .first-add-font,.br-patient-education .first-add-font,.cb-hardware .first-add-font,.cb-academic-conference .first-add-font,.cb-department-construction .first-add-font,.cb-patient-education .first-add-font,.scheme .first-add-font{	
+	text-align: center;
+	height: 60px;
+	font-size: 33px;
+}
+ 
+.cb-generating-scheme .br-last .last-left-td,.br-generating-scheme .br-last .last-left-td,#activeData .br-last .last-left-td,.br-hardware .br-last .last-left-td,.br-academic-conference .br-last .last-left-td,.br-department-construction .br-last .last-left-td,.br-patient-education .br-last .last-left-td,.cb-hardware .br-last .last-left-td,.cb-academic-conference .br-last .last-left-td,.cb-department-construction .br-last .last-left-td,.cb-patient-education .br-last .last-left-td,.scheme .br-last .last-left-td{
+	/*border-bottom-left-radius: 12px;*/
+	background: #f5a21b;
+	text-align: center;
+	height: 60px;
+	font-size: 45px;
+	overflow: hidden;
+}
+.cb-generating-scheme .br-last .last-right-td,.br-generating-scheme .br-last .last-right-td,#activeData .br-last .last-right-td,.br-hardware .br-last .last-right-td,.br-academic-conference .br-last .last-right-td,.br-department-construction .br-last .last-right-td,.br-patient-education .br-last .last-right-td,.cb-hardware .br-last .last-right-td,.cb-academic-conference .br-last .last-right-td,.cb-department-construction .br-last .last-right-td,.cb-patient-education .br-last .last-right-td,.scheme .br-last .last-right-td{
+	/*border-bottom-right-radius: 12px;*/
+	background: #f5a21b;
+	height: 60px;
+	font-size: 45px;
+	overflow: hidden;
+}
+.br-hardware .br-add,.br-academic-conference .br-add,.br-department-construction .br-add,.br-patient-education .br-add,.cb-hardware .br-add,.cb-academic-conference .br-add,.cb-department-construction .br-add,.cb-patient-education .br-add,.scheme .br-add{
+	border-bottom: 1px dashed white!important;
+}
+.br-hardware .br-last,.br-academic-conference .br-last,.br-department-construction .br-last,.br-patient-education .br-last,.cb-hardware .br-last,.cb-academic-conference .br-last,.cb-department-construction .br-last,.cb-patient-education .br-last,.scheme .br-last{
+	height: 30px!important;
+	font-size: 45px;
+}
+.br-hardware .br-last td,.br-academic-conference .br-last td,.br-department-construction .br-last td,.br-patient-education .br-last td,.cb-hardware .br-last td,.cb-academic-conference .br-last td,.cb-department-construction .br-last td,.cb-patient-education .br-last td,.scheme .br-last td{
+	background: #f5a21b;
+	border: none!important;
+	height: 30px;
+	font-size: 45px;
+}
+.br-hardware .br-second-add,.br-academic-conference .br-second-add,.br-department-construction .br-second-add,.br-patient-education .br-second-add,.cb-hardware .br-second-add,.cb-academic-conference .br-second-add,.cb-department-construction .br-second-add,.cb-patient-education .br-second-add{
+	border-bottom: none!important;
+}
+
+.br-academic-conference .last-right-td-border-none,.cb-academic-conference .last-right-td-border-none{
+	border-bottom: none;
+}
+/*复写*/
+/*.picture-page{
+	margin-left: 30%;
+	height: 8%;
+}*/
+.exhibition button{
+    padding: 9px 20px;
+    background: #0295da;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+    margin: 20px 0;
+    /*修改*/
+    /*margin: 0;*/
+    border: none;
+    float: left;
+    margin-left: -1px;
+    height: 68px;
+    width: 220px;
+}
+.exhibition-active button{
+	background: #f5a21b !important;
+	height: 78px;
+	
+}
+.exhibition-active .triangle-left{
+	border-top: 39px solid transparent;
+	border-bottom: 42px solid transparent;
+	border-right: 21px solid #f5a21b;
+}
+#exhibition{
+	
+}
+.triangle-left { 
+	width:0; 
+    height:0; 
+    border-top:34px solid transparent;
+    border-bottom:36px solid transparent; 
+    border-right:27px solid #0295da; 
+    float: left;
+    margin-top: 19px;
+} 
+button{
+	border: none;
+}
+.zhanshi-data tbody td{
+	background: #f3eadb;
+}
+.table-hover{
+	/*background: #f3eadb !important;*/
+}
+.table-nohover{
+	background: #f5a21b;
+}
+.table-nohover th,.table-nohover td{
+	text-align: center;
+}
+.brdabiao,.cbdabiao{
+	text-align: left;
+    margin: 0 auto;
+    font-size: 45px;
+    width: 70%;
+    background: #f5a21b;
+}
+.p2-content div a{
+	position: absolute;
+    bottom: 7%;
+    right: 11.2%;
+    color: #fff;
+    background: #65B62D;
+    padding: 5px 10px;
+    margin-right: 30px;
+}
+.p2-content div{
+	 background-size: 100% 100% !important; 
+	 width: 100%; 
+	 height: 100%;
+}
+.result-html{
+	width: 90%;
+    margin: 0 auto;
+}
+.result-html h3,.result-html h4,.result-html h5{
+	font-weight: bold;
+	margin: 20px auto;
+}
+.result-html h3{
+	text-align: center;
+	margin: 20px auto;
+}
+.text-indent{
+	text-indent: 2em;
+	font-size: 16px;
+    line-height: 25px;
+}
+.dibu{
+	width: 96%;
+    margin: 10px 2%;
+}
+.dibu span{
+	font-size: 18px;
+    font-weight: bold;
+    width: 49%;
+    display: inline-block;
+    margin: 10px 0;
+}
+#floatbutton{
+	position: fixed;
+    right: ;
+    bottom: 5%;
+}
+#floatbutton a{
+    background: #1B1DF5;
+    padding: 5px 10px;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+/*硬件升级、技术培训、患者服务、科室建设设计部分的td样式*/
+.scheme .last .br-second,.scheme .last .br-first{
+	border-bottom: none!important;
+	height: 100px;
+} 
+.save-result tbody tr:last-child td,.scheme .last .br-first-add{
+	background: #f5a21b;
+	border-bottom:none;
+	height: 60px;
+}
+.save-result tbody tr:nth-of-type(5) td{
+	border: none;
+} 
+#cb-hardware-next{
+	margin-top: -2px;
+}
+.br-first-add{
+	border-bottom: none;
+	height: 60px;
+}
+/*系统提供方案，最后保存的方案表格的边框样式*/
+/*硬件升级、技术培训、患者服务、科室建设设计部分*/
+#yinjianx thead th,#xueshux thead th,#keshix thead th,#huanjiaox thead th,#otherSupportth thead th{
+	border: 1px solid #3D18B8;
+	border-bottom: 1px solid #3D18B8!important;
+}
+#yinjianx tbody td,#xueshux tbody td,#keshix tbody td,#huanjiaox tbody td,#otherSupportth tbody td{
+	border: 1px solid #3D18B8;
+	border-bottom: 1px solid #3D18B8!important;
+}
+
+/*通过百人中心,储存中心个性化选择产生的结果，保存的方案表格的边框样式*/
+/*硬件升级、技术培训、患者服务、科室建设设计部分*/
+#yingjianresult thead th,#xueshuresult thead th,#huanjiaoresult thead th,#keshiresult thead th{
+	border: 1px solid #3D18B8;
+	border-bottom: 1px solid #3D18B8!important;
+}
+#yingjianresult tbody td,#xueshuresult tbody td,#huanjiaoresult tbody td,#keshiresult tbody td{
+	border: 1px solid #3D18B8;
+	border-bottom: 1px solid #3D18B8!important;
+}
+#yingjianresult tbody td,#xueshuresult tbody td,#huanjiaoresult tbody td,#keshiresult tbody td{
+	text-align: center;
+}
+/*其他支持*/
+#otherSupportth tbody tr:nth-of-type(2),#otherSupportth tbody tr:nth-of-type(3),#otherSupportth  tbody tr:nth-of-type(4),#otherSupportth tbody tr:nth-of-type(6),#otherSupportth tbody tr:nth-of-type(8),#otherSupportth tbody tr:nth-of-type(10){
+	border-bottom:1px solid #3D18B8;
+}
+#otherSupportth tbody tr:last-child{
+	border-bottom:1px solid #3D18B8;
+}
+#otherSupportth{
+	border-left: 1px solid #3D18B8;	
+}
+/*部分border不显示2016-7-9--2016-7-14*/
+#yingjianresult thead,#xueshuresult thead,#huanjiaoresult thead,#keshiresult thead{
+	border-left: 1px solid #3D18B8;
+}
+#yingjianresult thead th:first-child{
+	border-right: 1px solid #3D18B8;
+}
+#tourufangan{
+	margin:0 auto;
+	margin-right: 20%;	
+}
+#tourufangan #other{
+	border-bottom-left-radius: 24px;
+	border-bottom-right-radius: 24px;	
+	font-size: 32.7px;
+}
+#tourufangan #btnConfirm{
+	margin-right: -18px;
+	position: relative;
+	z-index: 1;
+	font-size: 32.7px;
+}
+#btnConfirm,#other{
+	padding: 5px 0;
+	height: 64px;
+}
+#other{
+	position: relative;
+	z-index: 10;
+	background: -webkit-linear-gradient(left,#4998c5,#4393c1);
+	width: 237px;
+	height: 64px;
+}
+#tourufanganhead th{
+	border-bottom: 1px dashed white;
+}
+.br-first-last{
+	width: 320px;
+	background: #f5a21b;
+	color: white;
+	text-align: center;
+	border-bottom: none!important;
+	/*border-bottom-left-radius: 12px;*/
+	height:60px;
+}
+.br-second{
+	border-bottom: 1px dashed  white;
+	height: 100px;
+}
+#br-academic-next,
+#br-department-next,
+#br-patient-next,
+#br-hardware-next,
+#cb-academic-next,
+#cb-department-next,
+#cb-patient-next,
+#cb-hardware-next{
+	border-bottom-left-radius: 24px;
+	border-bottom-right-radius: 24px;
+	width:237px;
+	border-bottom-left-radius: 24px;
+	border-bottom-right-radius: 24px;
+	margin-right: 5%;
+	background: -webkit-linear-gradient(left,#4998c5,#4393c1);
+	background: linear-gradient(left,#4998c5,#4393c1);
+	background: -ms-linear-gradient(left,#4998c5,#4393c1);
+	margin-top: 0;
+	box-shadow: 0 1px 8px #888888;
+    box-shadow:-webkit-box-shadow: 0 1px 8px #888888;
+    box-shadow:-ms-box-shadow: 0 1px 8px #888888;
+    box-shadow:-moz-box-shadow: 0 1px 8px #888888;
+    box-shadow:-o-box-shadow: 0 1px 8px #888888;
+    background: linear-gradient(to bottom,#357ea9,#3abcea);
+    height: 60px;
+}
+.br-patient-education table tbody tr:nth-of-type(6) td,.br-department-construction table tbody tr:nth-of-type(2) td,.br-academic-conference table tbody tr:nth-of-type(6) td,.br-hardware table tbody tr:nth-of-type(4) td,.cb-patient-education table tbody tr:nth-of-type(6) td,.cb-department-construction table tbody tr:nth-of-type(2) td,.cb-academic-conference table tbody tr:nth-of-type(6) td,.cb-hardware table tbody tr:nth-of-type(4) td{
+	border-bottom: none;
+}
+.br-academic-conference table tr .br-second,.cb-academic-conference table tr .br-second{
+	border-right: 1px dashed white;
+	text-align: center;
+	height: 100px;
+}
+.br-academic-conference table th .br-second:nth-of-type(2),.br-academic-conference table th .br-second:nth-of-type(3),.cb-academic-conference table th .br-second:nth-of-type(2),.cb-academic-conference table th .br-second:nth-of-type(3){
+	border-top-right-radius: 0;
+	text-align: center;
+}
+.changshang{
+    box-shadow: 0 1px 8px #888888;
+    box-shadow:-webkit-box-shadow: 0 1px 8px #888888;
+    box-shadow:-ms-box-shadow: 0 1px 8px #888888;
+    box-shadow:-moz-box-shadow: 0 1px 8px #888888;
+    box-shadow:-o-box-shadow: 0 1px 8px #888888;
+    position: relative;
+    z-index: 100;
+}
+#activeData thead tr .br-first-program,.changshang thead tr .br-first-program{
+	font-size: 45.3px;
+	font-family: "方正兰亭中黑";
+	padding-bottom: 20px;
+	background: linear-gradient(to top,#f08610,#f8b815);
+}
+.changshang tbody tr:last-child{
+	background: linear-gradient(to top,#ee7a0b,#f49d1b);
+	border-bottom-left-radius: 24px;
+	border-bottom-right-radius: 24px;
+}
+#yinjianx tbody tr,#xueshux tbody tr,#huanjiaox tbody tr,#keshix tbody tr,#otherSupportth tbody tr{
+	background: linear-gradient(to top,#fff,#fff););
+}
+.br-patient-education table thead tr:first-child th,.br-department-construction table thead tr:first-child th,.br-academic-conference table thead tr:first-child th,.br-hardware table thead tr:first-child th,.cb-patient-education table thead tr:first-child th,.cb-department-construction table thead tr:first-child th,.cb-academic-conference table thead tr:first-child th,.cb-hardware table thead tr:first-child th{
+	/*border: none!important;*/
+}
+#activeData .br-first{
+	width: 320px;
+	text-align: center;
+	height: 100px;
+}
+#activeData tbody tr td,#activeData thead tr th{
+	text-align: center;
+}
+/*补充2016-7-14*/
+.br-hardware tbody tr:nth-of-type(3) td,.cb-hardware tbody tr:nth-of-type(3) td,.br-academic-conference tbody tr:nth-of-type(4) td,.br-patient-education tbody tr:nth-of-type(4) td,.cb-academic-conference tbody tr:nth-of-type(2) td,.cb-patient-education tbody tr:nth-of-type(4) td{
+	/*border-bottom: none;*/
+}
+.scheme tbody tr:nth-of-type(5) td:nth-of-type(2),.br-hardware tbody tr:nth-of-type(3) td:nth-of-type(2),.cb-hardware tbody tr:nth-of-type(3) td:nth-of-type(2),.br-academic-conference tbody tr:nth-of-type(4) td:nth-of-type(2),.br-patient-education tbody tr:nth-of-type(4) td:nth-of-type(2),.cb-academic-conference tbody tr:nth-of-type(2) td:nth-of-type(2),.cb-patient-education tbody tr:nth-of-type(4) td:nth-of-type(2),.cb-department-construction tbody tr:nth-of-type(2) td:nth-of-type(2),.br-department-construction tbody tr:nth-of-type(2) td:nth-of-type(2){
+	
+}
+.scheme tbody,.br-hardware tbody,.cb-hardware tbody,.br-academic-conference tbody,.br-patient-education tbody,.cb-academic-conference tbody,.cb-patient-education tbody,.cb-department-construction tbody,.br-department-construction tbody{
+	background: #f5a21b;
+}
+/*2016-7-15*/
+.brzhanshi-data tbody tr td:first-child,.cbzhanshi-data tbody tr td:first-child{width: 320px;height: 42px;text-align: center;color: white;border-bottom:1px dashed  white;}
+.brzhanshi-data thead  th:nth-of-type(2),.cbzhanshi-data thead thth:nth-of-type(2){text-align: center;}
+.brzhanshi-data tbody tr td:nth-of-type(2),.cbzhanshi-data tbody tr td:nth-of-type(2){width: 220px;}
+.brzhanshi-data tbody tr:nth-of-type(6) td,.cbzhanshi-data tbody tr:nth-of-type(6) td{border-bottom: none;}
+.margin{width: 62%;height: 40px;}
+.margin button{float: right;margin: -1px auto;}
+.margin #br-again,.margin #cb-again{
+	width: 237px;
+	background: #0295da;
+	border-bottom-left-radius: 24px;
+	border-bottom-right-radius: 24px;
+	background: linear-gradient(to bottom,#357ea9,#3abcea);
+	position: relative;
+	z-index: 10;
+	background: -webkit-linear-gradient(left,#4998c5,#4393c1);
+	padding: 5px 0;
+	margin-top: 0;
+	height: 60px;
+	font-size: 32px;}
+.margin #br-generate,.margin #cb-generate{
+	width: 197px;	
+	margin-right: -18px;
+	position: relative;
+	border-bottom-left-radius: 24px;
+	z-index: 1;
+	background: #f5a21b;
+	background: linear-gradient(to bottom,#c55904,#fac60e);
+	height: 60px;
+	font-size: 32px;
+	font-family: "微软雅黑";}
+.margin button{margin-top: 0;
+	color: #FFFFFF;
+	padding: 5px 20px;
+	float: right;
+	box-shadow: -1px -1px 3px #888888;
+	-ms-box-shadow: -1px -1px 3px #888888;
+	-webkit-box-shadow: -1px -1px 3px #888888;
+	-moz-box-shadow: -1px -1px 3px #888888;
+	-o-box-shadow: -1px -1px 3px #888888;}	
+.br-patient-education thead tr:last-child th,.br-department-construction thead tr:last-child th,.br-academic-conference thead tr:last-child th,.br-hardware thead tr:last-child th,.cb-patient-education thead tr:last-child th,.cb-department-construction thead tr:last-child th,.cb-academic-conference thead tr:last-child th,.cb-hardware thead tr:last-child th{text-align: center;padding-bottom: 2%;padding-top:2%;}
+.br-first{font-size: 30px;text-align: left;}
+.br-academic-conference th,.br-academic-conference td,.cb-academic-conference th,.cb-academic-conference td{font-size:24px;}
+.margin #save-result{width: 237px;height: 60px;}
+.br-patient-education tr,.br-department-construction tr,.br-academic-conference tr,.br-hardware tr,.cb-patient-education tr,.cb-department-construction tr,.cb-academic-conference  tr,.cb-hardware tr{text-align: center;}
+.brzhanshi-data .br-last,.cbzhanshi-data .br-last{font-size: 28.5px;}
+.br-academic-conference{padding-top: 9.5%;}
+.br-generating-scheme,.cb-generating-scheme{padding-top: 12%;}
+.scheme{padding-top: 13%;}
+#btnsubmit{margin-right: 20px;}
+.br-academic-conference  table tbody.br-first,.cb-academic-conference table tbody .br-first{width: 320px;font-size: 28.5px;}
+.scheme .br-caption,.br-academic-conference .br-caption,.cb-academic-conference .br-caption,.br-hardware .br-caption,.cb-hardware .br-caption,.cb-generating-scheme .br-caption,.br-generating-scheme .br-caption{width: 320px;height: 23px;}
+.br-department-construction,.cb-department-construction{padding-top: 13%;}
+.save-result table,.br-generating-scheme table,.cb-generating-scheme table,.scheme table,.br-hardware table,.br-academic-conference table,.br-department-construction table,.br-patient-education table,.cb-hardware table,.cb-academic-conference table,.cb-department-construction table,.cb-patient-education table{border-bottom-left-radius: 12px;border-bottom-right-radius: 12px;overflow: hidden;border-top-right-radius: 12px;}
+.br-department-construction table tbody tr:nth-of-type(3) td,.br-department-construction table tbody tr:nth-of-type(4) td,.cb-department-construction table tbody tr:nth-of-type(3) td,.cb-department-construction table tbody tr:nth-of-type(4) td,.cb-academic-conference table tbody tr:nth-of-type(3) td,.cb-academic-conference table tbody tr:nth-of-type(4) td{border-bottom:none;border-right:none;border-left:none;}
+.br-department-construction table tbody tr:nth-of-type(4) td,.cb-department-construction table tbody tr:nth-of-type(4) td,.cb-academic-conference table tbody tr:nth-of-type(4) td{border-top: none;}
+.br-academic-conference tbody tr:nth-of-type(4){border-bottom: none;}
+.br-department-construction table tbody tr:nth-of-type(2) td,.cb-department-construction table tbody tr:nth-of-type(2) td{border-bottom: 1px dashed white;}
+.br-patient-education tbody tr:nth-of-type(5) td,.cb-patient-education tbody tr:nth-of-type(5) td,.br-academic-conference tbody tr:nth-of-type(4) td{border-bottom: none;}
+.br-academic-conference table tbody .br-first,.cb-academic-conference table tbody .br-first{text-align: left;}
+.cb-academic-conference{padding-top:12%}
+.br-academic-conference table tbody .br-first,.cb-academic-conference table tbody .br-first{text-align: left;padding-left: 30px;}
+.br-patient-education table tbody .br-first,.cb-patient-education table tbody .br-first{text-align: left;padding-left: 35px;}
+.scheme table,.br-generating-scheme table,.cb-generating-scheme table,.save-result table,.br-hardware table,.cb-hardware table,.br-academic-conference table,.cb-academic-conference table,.br-department-construction table,.cb-department-construction table,.br-patient-education table,.cb-patient-education table{background: #f5a21b;}
+.scheme table,.br-generating-scheme table,.cb-generating-scheme table,.save-result table{border-top-right-radius: 12px;}
+
+#character-slider1,
+#character-slider2,
+#character-slider3,
+#character-slider4 {
+	width: 66%!important;
+	visibility: collapse;
+	margin-left: 20%;
+}
+.sc-selected img{margin-left: 25%;margin-top: -2.5%;}
+.sc-selected{z-index: 1000000!important;}
+.sc-overlay-right{width: 1000px!important;height: 500px!important;margin-top: 7%;}
+.scheme table thead tr:nth-of-type(2) th,.save-result table thead tr:nth-of-type(2) th{font-size: 33px;text-align: center;font-family:"方正兰亭中黑";}
+.br-department-construction table tbody .br-first,.cb-department-construction table tbody .br-first{text-align: left;padding-left: 35px;}
+#otherSupportth,#yinjianx,#xueshux,#huanjiaox,#keshix{box-shadow:none;}
+button{outline:none;}

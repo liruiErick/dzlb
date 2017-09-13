@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript"  src="js/grdsIndexList.js"></script>	 
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/list.css" />     	
+</head>
+<body>
+
+<div class="scheme">	
+	<table  class="one-situation">
+		<caption>调研问题</caption>
+		<thead>
+			<tr>
+				<th>调研问题</th><th>答案</th>
+			</tr>
+		</thead>
+		<tbody class="content">			
+		</tbody>
+	</table>
+	<hr>
+	<table cellpadding="0" cellspacing="0" class="one-situation" id="answer-result">
+		<caption>投入方案</caption>
+		<thead>
+			<tr>
+				<th width="25%">投入项目</th>
+				<th>内容</th>
+			</tr>
+		</thead>
+		<tbody id="first-round">			
+		</tbody>
+	</table>
+</div>
+<hr>
+<div>
+<a href="list.html">返回列表</a>
+</div>
+<script>
+	window.onload=function(){
+		showInvestResult();
+	}
+</script>
+</body>
+</html>

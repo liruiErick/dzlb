@@ -1,0 +1,95 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+td,th{
+	border:solid #3D18B8;
+	border-width:0px 1px 1px 0px;
+	padding: 10px;
+ }
+table{
+	border:solid #3D18B8;
+ 	border-width:1px 1px 1px 1px;
+ } 
+
+th{
+	text-align: center;
+	border-bottom: 1px solid #3D18B8 !important;
+	background: #f5a21b;
+	color: #fdfcfc;
+}
+
+table{
+	border-top: 1px solid #3D18B8;
+	border-left: 1px solid #3D18B8;
+}
+table th {
+    border-bottom: 1px solid #3D18B8 !important;
+}
+table td,table th {
+    border:1px solid #241C94 !important;
+}
+
+.table > thead > tr > th{
+	text-align: center;
+	border-bottom: 1px solid #FFFFFF  !important;
+	background: #f5a21b;
+	color: #fdfcfc;
+}
+.table-hover > tbody > tr:hover{
+	cursor: pointer;
+}
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid #FFFFFF ;
+}
+.changshang{
+	border-top: 1px solid #3D18B8;
+	border-left: 1px solid #3D18B8;
+}
+.changshang th {
+    border-bottom: 1px solid #3D18B8 !important;
+}
+.changshang td,.changshang th {
+    border:1px solid #241C94 !important;
+}
+.detail{
+	width: 85%;
+    margin: 0 auto;
+}
+.detail h3,.detail h4,.detail h5{
+	font-weight: bold;
+	margin: 20px auto;
+}
+.detail h3{
+	text-align: center;
+	margin: 20px auto;
+}
+.text-indent{
+	text-indent: 2em;
+	font-size: 16px;
+    line-height: 25px;
+}
+.dibu{
+	width: 96%;
+    margin: 10px 2%;
+}
+.dibu span{
+	font-size: 18px;
+    font-weight: bold;
+    width: 49%;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.title{
+	background: #f5a21b;
+	color: #FFFFFF;
+}
+.title,.content{
+	width: 100%;
+}
+.content a{
+	text-decoration: none;
+}
